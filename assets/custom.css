@@ -37,3 +37,36 @@
   background-color: #e6f2ff;
   color: #525252;
 }
+
+/*--- text ---*/
+body {
+	font-size: 13px;
+	text-align: justify;
+}
+
+p.comment {
+background-color: #DBDBDB;
+padding: 10px;
+border: 1px solid black;
+border-radius: 5px;
+}
+
+code.r{
+  font-size: 10px;
+}
+
+pre code, pre, code {
+  font-size: 12px;
+  white-space: pre !important;
+  overflow-x: scroll !important;
+  word-break: keep-all !important;
+  word-wrap: initial !important;
+}
+
+h1 {
+	font-size: 18px;
+}
+
+h2 {
+	font-size: 18px;
+}
