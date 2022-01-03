@@ -1,0 +1,15 @@
+understanding-data
+introduction
+reading-list
+qa-session
+instructions-for-accessing-rstudio-on-ucl-server
+the-environment-in-rstudio
+using-the-r-console-as-a-calculator
+creating-basic-objects-and-assigning-values-to-them
+data-entry-into-rstudio
+importing-data-into-rstudio
+working-with-data-in-rstudio
+useful-functions
+basic-subsetting-and-manipulation-of-data
+basic-visualisation
+seminar
