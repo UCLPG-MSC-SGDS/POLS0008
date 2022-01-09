@@ -12,4 +12,5 @@ working-with-data-in-rstudio
 useful-functions
 basic-subsetting-and-manipulation-of-data
 basic-visualisation
+frequency-distributions
 seminar-tasks-and-questions

@@ -165,6 +165,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.8.1" data-path="understanding-data.html"><a href="understanding-data.html#useful-functions"><i class="fa fa-check"></i><b>1.8.1</b> Useful functions</a></li>
 <li class="chapter" data-level="1.8.2" data-path="understanding-data.html"><a href="understanding-data.html#basic-subsetting-and-manipulation-of-data"><i class="fa fa-check"></i><b>1.8.2</b> Basic subsetting and manipulation of data</a></li>
 <li class="chapter" data-level="1.8.3" data-path="understanding-data.html"><a href="understanding-data.html#basic-visualisation"><i class="fa fa-check"></i><b>1.8.3</b> Basic visualisation</a></li>
+<li class="chapter" data-level="1.8.4" data-path="understanding-data.html"><a href="understanding-data.html#frequency-distributions"><i class="fa fa-check"></i><b>1.8.4</b> Frequency Distributions</a></li>
 </ul></li>
 <li class="chapter" data-level="1.9" data-path="understanding-data.html"><a href="understanding-data.html#seminar-tasks-and-questions"><i class="fa fa-check"></i><b>1.9</b> Seminar tasks and questions</a></li>
 </ul></li>
@@ -209,7 +210,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="q-a-session" class="section level3" number="1.1.2">
 <h3><span class="header-section-number">1.1.2</span> Q &amp; A session</h3>
-<p>This week there will be a live Q&amp;A session on <strong>Tuesday, January 11, 2022 @ 11h00 to 12:30 (GMT)</strong>. The session will be hosted on Zoom <a href="https://ucl.zoom.us/j/93067181151?pwd=dmtvd29RUGFGV3VrZ3dodGhDZFB2QT09"><strong>LINK</strong></a>. For security reasons, the meeting password for this Q&amp;A session can be found on Moodle on the main page: POLS0008 - Q&amp;A - Tuesday 11:00.</p>
+<p>This week there will be a live Q&amp;A session on <strong>Tuesday, January 11, 2022 @ 11h00 to 12:30 (GMT)</strong>. The session will be hosted on Zoom <a href="https://ucl.zoom.us/j/96460973152?pwd=K2taYWJLdm5HKzAzQXJCUThxbUczUT09"><strong>LINK</strong></a>. For security reasons, the meeting password for this Q&amp;A session can be found on Moodle on the main page: <strong>POLS0008 Online Q&amp;A - Tuesdays 11:00-12:30</strong></p>
 </div>
 </div>
 <div id="instructions-for-accessing-rstudio-on-ucl-server" class="section level2" number="1.2">
@@ -639,6 +640,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb72-4"><a href="understanding-data.html#cb72-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Pass the counts to the barplot() function &amp; generate fully labelled Bar Plot</span></span>
 <span id="cb72-5"><a href="understanding-data.html#cb72-5" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(counts, <span class="at">main=</span><span class="st">&quot;School Distribution based on OFSTED performance&quot;</span>, <span class="at">xlab =</span><span class="st">&quot;OFSTED grades&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Number of Schools&quot;</span>)</span></code></pre></div>
 <p><img src="POLS0008_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+</div>
+<div id="frequency-distributions" class="section level3" number="1.8.4">
+<h3><span class="header-section-number">1.8.4</span> Frequency Distributions</h3>
+<p>A frequency distribution table is a nice to way to perform a simple univariable analysis to summarize the number of schools (frequency) that have a set number of students within certain fixed ranges.</p>
+<p>Let us gauge the minimum and maximum number of students, and create ranges between these two values.</p>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="understanding-data.html#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(SchoolData<span class="sc">$</span>TotalStudents)</span></code></pre></div>
+<pre><code>## [1] 239</code></pre>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="understanding-data.html#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(SchoolData<span class="sc">$</span>TotalStudents)</span></code></pre></div>
+<pre><code>## [1] 891</code></pre>
+<p>We are going to create a new ranges column from 200 (based from lowest value i.e., 239) to 900 (i.e., based on the highest which is 891) to look something like <code>200-300</code>, <code>301-400</code>, <code>401-500</code>, …, <code>801-900</code> by cutting the <code>TotalStudents</code> using the <code>cut()</code> function. This will help us to create the desired frequency distribution table in RStudio.</p>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="understanding-data.html#cb77-1" aria-hidden="true" tabindex="-1"></a>SchoolData<span class="sc">$</span>Ranges <span class="ot">&lt;-</span> <span class="fu">cut</span>(SchoolData<span class="sc">$</span>TotalStudents, <span class="at">breaks=</span><span class="fu">c</span>(<span class="dv">200</span>, <span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>, <span class="dv">900</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;200-300&quot;</span>,<span class="st">&quot;301-400&quot;</span>,<span class="st">&quot;401-500&quot;</span>,<span class="st">&quot;501-600&quot;</span>,<span class="st">&quot;601-700&quot;</span>,<span class="st">&quot;701-800&quot;</span>,<span class="st">&quot;801-900&quot;</span>))</span></code></pre></div>
+<p>Now, lets create the frequency table that shows the following: (1.) the frequency of schools with student numbers in those ranges; (2.) Cumulative frequency of schools; and (3.) proportions of schools falling in those ranges.</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="understanding-data.html#cb78-1" aria-hidden="true" tabindex="-1"></a>freqtable <span class="ot">&lt;-</span> <span class="fu">table</span>(SchoolData<span class="sc">$</span>Ranges)</span>
+<span id="cb78-2"><a href="understanding-data.html#cb78-2" aria-hidden="true" tabindex="-1"></a><span class="co"># see frequency of schools only</span></span>
+<span id="cb78-3"><a href="understanding-data.html#cb78-3" aria-hidden="true" tabindex="-1"></a>freqtable</span></code></pre></div>
+<pre><code>## 
+## 200-300 301-400 401-500 501-600 601-700 701-800 801-900 
+##       5       8      20      11       7       4       3</code></pre>
+<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="understanding-data.html#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="co"># now, add the cumulative frequency and proportion to get table output in RStudio</span></span>
+<span id="cb80-2"><a href="understanding-data.html#cb80-2" aria-hidden="true" tabindex="-1"></a>Output <span class="ot">&lt;-</span> <span class="fu">transform</span>(freqtable, <span class="at">CumuFreq =</span> <span class="fu">cumsum</span>(Freq), <span class="at">Proportions=</span><span class="fu">prop.table</span>(Freq))</span>
+<span id="cb80-3"><a href="understanding-data.html#cb80-3" aria-hidden="true" tabindex="-1"></a><span class="co"># see final output</span></span>
+<span id="cb80-4"><a href="understanding-data.html#cb80-4" aria-hidden="true" tabindex="-1"></a>Output</span></code></pre></div>
+<pre><code>##      Var1 Freq CumuFreq Proportions
+## 1 200-300    5        5  0.08620690
+## 2 301-400    8       13  0.13793103
+## 3 401-500   20       33  0.34482759
+## 4 501-600   11       44  0.18965517
+## 5 601-700    7       51  0.12068966
+## 6 701-800    4       55  0.06896552
+## 7 801-900    3       58  0.05172414</code></pre>
+<div class="note">
+<p><strong>Interpretation</strong>: Out of the 58 primary schools in Ealing, 20 schools (0.3448 or 34.48%) have a student number totals ranging between 401-500. The cumulative frequency of the range bracket for student numbers tells you how many schools have students from that range and lower. For instance 33 primary schools in Ealing have up to 500 students.</p>
+</div>
 <p><strong>RECAP</strong></p>
 <p>This conclude practical tutorials for week 1. You can save your script by pressing the save button. To recap, in this section you have learnt how to:</p>
 <ol style="list-style-type: decimal">
@@ -663,6 +697,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li><p>What are the names of schools that has the highest, and lowest number of students? [<strong>HINT</strong>: use <code>max()</code>, <code>min()</code> and <code>View()</code> functions]</p></li>
 <li><p>Generate a fully labelled <code>barplot()</code> and describe the distribution of schools by OFSTED scores.</p></li>
+<li><p>Create a frequency table for the total number of students (Hint: see example in <strong>section 1.8.4.</strong> and lecture Slides #35, and make sure to use an appropriate interval for the ranges)</p></li>
 </ol>
 
 </div>
