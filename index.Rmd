@@ -1,0 +1,49 @@
+--- 
+title: "POLS0008: Introduction to Quantitative Methods"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+link-citations: yes
+github-repo: "UCLPG-MSC-SGDS/POLS0008"
+description: "POLS0008: Introduction to Quantitative Methods Handbook"
+bibliography: [book.bib, packages.bib]
+---
+
+# Welcome {-}
+
+```{r echo=FALSE, out.width = "100%", fig.align='center', cache=TRUE,}
+knitr::include_graphics('images/general/intro_page_picture.jpeg') 
+```
+<br />
+
+Welcome to **POLS0008: Introduction to Quantitative Research Methods**, one of the first year core module for students enrolled on Q-Step programmes and a second year methods option in BSc Philosophy, Politics and Economics. Before we begin, please take a moment to read through the information below carefully.
+
+## Moodle {-}
+
+For the first **4 weeks** all practical materials will be hosted on this webpage. Although do keep in mind that [**Moodle**](https://moodle.ucl.ac.uk/) is the central point of your learning experience for **POLS0008** and contains everything you need to know about it. It's where you'll find links to all lecture content, reading materials, planned activities as well as key module and assessment information. 
+
+## Structure {-}
+
+The course is generally structured by several short lecture videos, reading material, a computer practical, an online Q & A session via Zoom on Tuesday mornings, and a live seminar. Each week, all content for that week will be made available online by Monday morning. All live seminars take place on Thursday morning. This means that you have **3 days** to go through all the materials and conduct your seminar task before it is discussed in the live seminar.
+
+## Assessment {-}
+
+This module is assessed by one **2,500 word** essay (counting 100% towards your final mark for this course) based on secondary analysis of survey data. The assessment will be introduced by Dr Stephen Jivraj and more details will follow in later weeks.
+
+## Technical support {-}
+
+We do not offer any technical support. If you have any technical questions or encounter technical problems, you will have to take this up with the IT Service Desk. Similarly, for questions related to the organisation of the course (e.g. to which seminar group your get assigned to), you will have to direct your queries to the student office of your Department.
+
+## Office hours {-}
+
+Office hours with Dr Anwar Musah (Tuesdays between 15h00 and 17h00) can be booked [**here**](https://outlook.office365.com/owa/calendar/AnwarMusahBookableOfficeHours@ucl.ac.uk/bookings/). Office hours with Dr Stephen Jivraj (Tuesdays between 09h30 and 11h00) can be booked [**here**](https://outlook.office365.com/owa/calendar/StephenJivraj@ucl.ac.uk/bookings/).
+
+## My contact information {-}
+
+**Anwar Musah**
+<br/>
+UCL Department of Geography 
+<br/>
+Room 115, North West Wing Building, WC1E 6BT
+<br/>
+Email: [**a.musah@ucl.ac.uk**](a.musah@ucl.ac.uk)
