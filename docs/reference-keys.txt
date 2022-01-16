@@ -14,3 +14,14 @@ basic-subsetting-and-manipulation-of-data
 basic-visualisation
 frequency-distributions
 seminar-tasks-and-questions
+examining-data-i
+introduction-w02
+reading-list-1
+q-a-session-1
+measures-of-central-tendency
+accessing-rstudio-server-uploading-and-importing-data
+mean-median-and-mode
+simple-plots
+measures-of-dispersion
+seminar-w02
+byl-w02

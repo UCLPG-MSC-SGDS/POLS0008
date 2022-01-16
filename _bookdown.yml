@@ -1,0 +1,13 @@
+book_filename: "POLS0008"
+rmd_files:
+- index.rmd
+- 01-week1.Rmd
+- 02-week2.Rmd
+#- 03-week3.Rmd
+#- 04-week4.Rmd
+
+language:
+  ui:
+    chapter_name: ""
+delete_merged_file: true
+output_dir: "docs"

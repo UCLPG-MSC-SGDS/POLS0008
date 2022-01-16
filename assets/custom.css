@@ -44,29 +44,8 @@ body {
 	text-align: justify;
 }
 
-p.comment {
-background-color: #DBDBDB;
-padding: 10px;
-border: 1px solid black;
-border-radius: 5px;
-}
+.book .book-body .page-wrapper .page-inner section.normal h1{font-size:20px}
 
-code.r{
-  font-size: 10px;
-}
+.book .book-body .page-wrapper .page-inner section.normal h2{font-size:20px}
 
-pre code, pre, code {
-  font-size: 12px;
-  white-space: pre !important;
-  overflow-x: scroll !important;
-  word-break: keep-all !important;
-  word-wrap: initial !important;
-}
-
-h1 {
-	font-size: 18px;
-}
-
-h2 {
-	font-size: 18px;
-}
+.book .book-body .page-wrapper .page-inner section.normal h3{font-size:20px}
