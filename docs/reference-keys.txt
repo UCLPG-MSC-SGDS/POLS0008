@@ -25,3 +25,11 @@ simple-plots
 measures-of-dispersion
 seminar-w02
 byl-w02
+examining-data-ii
+introduction-w03
+reading-list-2
+q-a-session-2
+data-visualisation
+ggplot2
+seminar-w03
+byl-w03
