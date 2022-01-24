@@ -3,7 +3,7 @@ rmd_files:
 - index.rmd
 - 01-week1.Rmd
 - 02-week2.Rmd
-#- 03-week3.Rmd
+- 03-week3.Rmd
 #- 04-week4.Rmd
 
 language:
