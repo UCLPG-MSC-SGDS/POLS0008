@@ -1,3 +1,6 @@
+fig:04-ons-website
+fig:04-mid-year-download
+fig:04-figure-load-tidyverse
 understanding-data
 introduction
 reading-list
@@ -33,3 +36,10 @@ data-visualisation
 ggplot2
 seminar-w03
 byl-w03
+sourcing-data
+introduction-w04
+reading-list-w04
+q-a-session-3
+sourcing-data-1
+preparing-data
+seminar-w04
