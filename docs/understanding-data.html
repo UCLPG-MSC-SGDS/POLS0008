@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Week 1 Understanding Data | POLS0008: Introduction to Quantitative Research Methods 2023/24</title>
+  <meta name="description" content="POLS0008: Introduction to Quantitative Methods Handbook" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Week 1 Understanding Data | POLS0008: Introduction to Quantitative Research Methods 2023/24" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="POLS0008: Introduction to Quantitative Methods Handbook" />
+  <meta name="github-repo" content="UCLPG-MSC-SGDS/POLS0008" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Week 1 Understanding Data | POLS0008: Introduction to Quantitative Research Methods 2023/24" />
+  
+  <meta name="twitter:description" content="POLS0008: Introduction to Quantitative Methods Handbook" />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="recommended-reading-list.html"/>
+<link rel="next" href="examining-data-i.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="toc-logo">
+<a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-quantitative-research-methods-POLS0008"><img src="images/general/ucl_logo.png">
+</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#description"><i class="fa fa-check"></i>Description</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#structure"><i class="fa fa-check"></i>Structure</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#timetable-and-key-locations"><i class="fa fa-check"></i>Timetable and key locations</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact-details"><i class="fa fa-check"></i>Contact details</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="recommended-reading-list.html"><a href="recommended-reading-list.html"><i class="fa fa-check"></i>Recommended Reading List</a>
+<ul>
+<li class="chapter" data-level="" data-path="recommended-reading-list.html"><a href="recommended-reading-list.html#week-1-understanding-data"><i class="fa fa-check"></i>Week 1: Understanding Data</a></li>
+<li class="chapter" data-level="" data-path="recommended-reading-list.html"><a href="recommended-reading-list.html#week-2-examining-data-i"><i class="fa fa-check"></i>Week 2: Examining Data I</a></li>
+<li class="chapter" data-level="" data-path="recommended-reading-list.html"><a href="recommended-reading-list.html#week-3-examining-data-ii"><i class="fa fa-check"></i>Week 3: Examining Data II</a></li>
+<li class="chapter" data-level="" data-path="recommended-reading-list.html"><a href="recommended-reading-list.html#week-4-sourcing-data"><i class="fa fa-check"></i>Week 4: Sourcing Data</a></li>
+<li class="chapter" data-level="" data-path="recommended-reading-list.html"><a href="recommended-reading-list.html#extra-notes"><i class="fa fa-check"></i>Extra notes</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="understanding-data.html"><a href="understanding-data.html"><i class="fa fa-check"></i><b>1</b> Understanding Data</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="understanding-data.html"><a href="understanding-data.html#introduction"><i class="fa fa-check"></i><b>1.1</b> Introduction</a></li>
+<li class="chapter" data-level="1.2" data-path="understanding-data.html"><a href="understanding-data.html#instructions-for-accessing-rstudio-on-ucl-server"><i class="fa fa-check"></i><b>1.2</b> Instructions for accessing RStudio on UCL Server</a></li>
+<li class="chapter" data-level="1.3" data-path="understanding-data.html"><a href="understanding-data.html#the-environment-in-rstudio"><i class="fa fa-check"></i><b>1.3</b> The environment in RStudio</a></li>
+<li class="chapter" data-level="1.4" data-path="understanding-data.html"><a href="understanding-data.html#using-the-r-console-as-a-calculator"><i class="fa fa-check"></i><b>1.4</b> Using the R-Console as a calculator</a></li>
+<li class="chapter" data-level="1.5" data-path="understanding-data.html"><a href="understanding-data.html#creating-basic-objects-and-assigning-values-to-them"><i class="fa fa-check"></i><b>1.5</b> Creating basic objects and assigning values to them</a></li>
+<li class="chapter" data-level="1.6" data-path="understanding-data.html"><a href="understanding-data.html#data-entry-in-rstudio"><i class="fa fa-check"></i><b>1.6</b> Data entry in RStudio</a></li>
+<li class="chapter" data-level="1.7" data-path="understanding-data.html"><a href="understanding-data.html#uploading-data-to-rstudio-server-and-importing-data-into-the-environment"><i class="fa fa-check"></i><b>1.7</b> Uploading data to RStudio Server and importing data into the environment</a></li>
+<li class="chapter" data-level="1.8" data-path="understanding-data.html"><a href="understanding-data.html#working-with-data-in-rstudio"><i class="fa fa-check"></i><b>1.8</b> Working with data in RStudio</a>
+<ul>
+<li class="chapter" data-level="1.8.1" data-path="understanding-data.html"><a href="understanding-data.html#useful-functions"><i class="fa fa-check"></i><b>1.8.1</b> Useful functions</a></li>
+<li class="chapter" data-level="1.8.2" data-path="understanding-data.html"><a href="understanding-data.html#basic-subsetting-and-manipulation-of-data"><i class="fa fa-check"></i><b>1.8.2</b> Basic subsetting and manipulation of data</a></li>
+<li class="chapter" data-level="1.8.3" data-path="understanding-data.html"><a href="understanding-data.html#basic-visualisation"><i class="fa fa-check"></i><b>1.8.3</b> Basic visualisation</a></li>
+<li class="chapter" data-level="1.8.4" data-path="understanding-data.html"><a href="understanding-data.html#frequency-distributions"><i class="fa fa-check"></i><b>1.8.4</b> Frequency Distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="understanding-data.html"><a href="understanding-data.html#seminar-tasks-and-questions"><i class="fa fa-check"></i><b>1.9</b> Seminar tasks and questions</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="examining-data-i.html"><a href="examining-data-i.html"><i class="fa fa-check"></i><b>2</b> Examining data I</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="examining-data-i.html"><a href="examining-data-i.html#introduction-w02"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="examining-data-i.html"><a href="examining-data-i.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>2.2</b> Measures of central tendency</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="examining-data-i.html"><a href="examining-data-i.html#accessing-rstudio-server-uploading-and-importing-data"><i class="fa fa-check"></i><b>2.2.1</b> Accessing RStudio Server, uploading and importing data</a></li>
+<li class="chapter" data-level="2.2.2" data-path="examining-data-i.html"><a href="examining-data-i.html#mean-median-and-mode"><i class="fa fa-check"></i><b>2.2.2</b> Mean, Median and Mode</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="examining-data-i.html"><a href="examining-data-i.html#simple-plots"><i class="fa fa-check"></i><b>2.3</b> Simple plots</a></li>
+<li class="chapter" data-level="2.4" data-path="examining-data-i.html"><a href="examining-data-i.html#measures-of-dispersion"><i class="fa fa-check"></i><b>2.4</b> Measures of dispersion</a></li>
+<li class="chapter" data-level="2.5" data-path="examining-data-i.html"><a href="examining-data-i.html#seminar-w02"><i class="fa fa-check"></i><b>2.5</b> Seminar task &amp; questions</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="examining-data-ii.html"><a href="examining-data-ii.html"><i class="fa fa-check"></i><b>3</b> Examining data II</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="examining-data-ii.html"><a href="examining-data-ii.html#introduction-w03"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="examining-data-ii.html"><a href="examining-data-ii.html#data-visualisation"><i class="fa fa-check"></i><b>3.2</b> Data visualisation</a></li>
+<li class="chapter" data-level="3.3" data-path="examining-data-ii.html"><a href="examining-data-ii.html#ggplot2"><i class="fa fa-check"></i><b>3.3</b> ggplot2</a></li>
+<li class="chapter" data-level="3.4" data-path="examining-data-ii.html"><a href="examining-data-ii.html#seminar-w03"><i class="fa fa-check"></i><b>3.4</b> Seminar</a></li>
+<li class="chapter" data-level="3.5" data-path="examining-data-ii.html"><a href="examining-data-ii.html#byl-w03"><i class="fa fa-check"></i><b>3.5</b> Before you leave</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="sourcing-data.html"><a href="sourcing-data.html"><i class="fa fa-check"></i><b>4</b> Sourcing data</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="sourcing-data.html"><a href="sourcing-data.html#introduction-w04"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="sourcing-data.html"><a href="sourcing-data.html#sourcing-data-1"><i class="fa fa-check"></i><b>4.2</b> Sourcing data</a></li>
+<li class="chapter" data-level="4.3" data-path="sourcing-data.html"><a href="sourcing-data.html#preparing-data"><i class="fa fa-check"></i><b>4.3</b> Preparing data</a></li>
+<li class="chapter" data-level="4.4" data-path="sourcing-data.html"><a href="sourcing-data.html#seminar-w04"><i class="fa fa-check"></i><b>4.4</b> Seminar</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">POLS0008: Introduction to Quantitative Research Methods 2023/24</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="understanding-data" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Week 1</span> Understanding Data<a href="understanding-data.html#understanding-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="introduction" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Introduction<a href="understanding-data.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Welcome to week 1’s practicals for Introduction to Quantitative Research Methods. This week we will focus on understanding data. The goal for this week’s session is to get you started with using RStudio and getting you to become familiar with its environment. Today’s session aims to introduce you to the basic programming etiquette as well as building your confidence in using RStudio. At the end of this session, you should be able to perform the following:</p>
+<ol style="list-style-type: decimal">
+<li>Accessing RStudio Server from a UCL Workstation or remotely</li>
+<li>Use the R-Console as a basic calculator</li>
+<li>Loading in data from a CSV &amp; sub-setting it into smaller chunks</li>
+<li>Handle discrete and categorical data</li>
+<li>Basic graphical visualisation in RStudio</li>
+</ol>
+<p>Make sure to download the data set for Week 1 from <a href="https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Dataset%20for%20Week%201.zip"><strong>HERE</strong></a> if you have not already done so from the <strong>Welcome Page</strong>, as we will use them later on in <strong>Sections 1.7. and 1.9.</strong>. The data sets are:</p>
+<ol style="list-style-type: decimal">
+<li>For the tutorial practicals (<strong>Section 1.7.</strong>): <code>Primary Schools in Ealing.csv</code></li>
+<li>For the seminar tasks and questions (<strong>Section 1.9.</strong>): <code>All Schools in London.csv</code></li>
+</ol>
+<p>At the end of this tutorial, you will be asked to complete the tasks and questions in <strong>Section 1.9</strong>. Do try to complete this before Thursday’s seminar session. The solutions to <strong>Section 1.9</strong> will be released with the week’s new lecture notes and other content.</p>
+</div>
+<div id="instructions-for-accessing-rstudio-on-ucl-server" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Instructions for accessing RStudio on UCL Server<a href="understanding-data.html#instructions-for-accessing-rstudio-on-ucl-server" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="note">
+<p><strong>Important Note</strong>: You are strongly advised to use RStudio via UCL Server. This version is currently only available on the UCL network, or through VPN or <strong>Desktop @ UCL Anywhere</strong>. If you are not working on a UCL Workstation, use you own personal device (e.g. desktop, laptop, tablet, smartphone, etc) to connect remotely with <strong>Desktop @ UCL Anywhere</strong> first before proceeding to use RStudio through a UCL server via a web browser.</p>
+</div>
+<p><br>
+<strong>OPTION A - Connecting to RStudio directly from a UCL PC/Workstation</strong>: To begin, we provide a step-by-step guide to accessing RStudio Server via a UCL workstation. Open a web browser (i.e., Internet Explorer or Google Chrome) and navigate to: <a href="https://rstudio.data-science.rc.ucl.ac.uk/"><strong>https://rstudio.data-science.rc.ucl.ac.uk/</strong></a>. Log in with your usual UCL <strong>username</strong> and <strong>password</strong>. You should see the RStudio interface appear.</p>
+<p><strong>Video explanation (Length: 4:03 minutes)</strong></p>
+<div class="vembedr" align="center">
+<div>
+<iframe src="https://web.microsoftstream.com/embed/video/2924b6c0-8efc-47e0-8fdd-d8070ebd8f4c?autoplay=false&amp;showinfo=true" width="711" height="400" style="border:none;" data-external="1"></iframe>
+</div>
+</div>
+<p><strong>OPTION B - Connecting from a personal device</strong>: Alternatively, if you are working from you <strong>personal computer</strong>, you can access RStudio via UCL Server. However, you will need to first log into a UCL workstation remotely via <strong>Desktop @ UCL Anywhere</strong> from your personal device.</p>
+<p><strong>Video explanation (Length: 12:03 minutes)</strong></p>
+<div class="vembedr" align="center">
+<div>
+<iframe src="https://web.microsoftstream.com/embed/video/1f6afc55-dcdd-4707-bfd9-135f168d9fd9?autoplay=false&amp;showinfo=true" width="711" height="400" style="border:none;" data-external="1"></iframe>
+</div>
+</div>
+<p>Here are the following steps:</p>
+<p>Step 1. Initiate UCL Remote <strong>Desktop @ Anywhere</strong>, click on this <a href="https://www.ucl.ac.uk/isd/services/computers/remote-access/desktopucl-anywhere"><strong>LINK</strong></a></p>
+<p><img src="images/general/Desktop_Anywhere_bluebutton.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Step 2. Next, click on the ‘<strong>Log in to Desktop @ UCL Anywhere</strong>’ blue button to log in, and then select “<strong>Use Light Version</strong>”.</p>
+<p><img src="images/general/Please_log_in.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Step 3. A page will appear asking you to enter your UCL <strong>username</strong> and <strong>password</strong>, enter these pieces of information, and click “<strong>Log On</strong>”.</p>
+<p><img src="images/general/Click_on_icon.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Step 4. Click on the icon “<strong>Desktop @ UCL Anywhere</strong>” to initiate the remote access on to a UCL workstation</p>
+<p>Step 5. You are now working on a UCL workstation remotely. To open RStudio on server simply open any web browser (i.e., Internet Explorer or Google Chrome) and navigate to: <a href="https://rstudio.data-science.rc.ucl.ac.uk/"><strong>https://rstudio.data-science.rc.ucl.ac.uk/</strong></a>. Log in with your usual UCL <strong>username</strong> and <strong>password</strong> and you should see the RStudio interface appear.</p>
+</div>
+<div id="the-environment-in-rstudio" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> The environment in RStudio<a href="understanding-data.html#the-environment-in-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When opening RStudio for the first time, you are greeted with its interface. The window is split into three panels: 1.) R-Console, 2.) Environments and 3.) Files, help &amp; Output.</p>
+<p><img src="images/general/R_Interface.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><strong>Panel 1</strong>: The R-Console lets the user type in R-codes to execute rapid commands and use it as basic calculator.</p>
+<p><strong>Panel 2</strong>: The Environments lets the user see which data sets, objects and other files are currently stored in RStudio’s memory</p>
+<p><strong>Panel 3</strong>: Under the File tab, it lets the user access other folders stored in the computer to open datasets. Under the Help tab, it also allows the user to view the help menu for codes and commands. Finally, under the Plots tab, the user can perusal his/her generated plots (e.g., histogram, scatter plots, maps etc.).</p>
+<p>The above section is the Menu Bar. You can access other functions for saving, editing, and opening a new Script File for writing codes. When you open a <strong>Script File</strong>, it reveals a fourth panel above the R-Console.</p>
+<p>You can open a Script File by simply going to the Menu Bar and clicking on “<strong>New File</strong>” &gt;&gt; “<strong>R Script</strong>”. This should open a new Script File titled ‘Untitled 1’.</p>
+<p>In all practical tutorials, you will be encouraged to use an R Script for collating and saving the codes written for these analyses. We will start writing codes in a script from <strong>section 1.7</strong> on wards. For now, let us start with the absolute basics, we begin with interacting with the R-Console as a basic calculator and typing in some simple code.</p>
+</div>
+<div id="using-the-r-console-as-a-calculator" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Using the R-Console as a calculator<a href="understanding-data.html#using-the-r-console-as-a-calculator" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The R console window (i.e., Panel 1) is the place where RStudio is waiting for you to tell it what to do. It will show the code you have commanded RStudio to execute, and it will also show the results from that command. You can type the commands directly into the window for execution of as well.</p>
+<p><strong>Video explanation (Length: 13:34 minutes)</strong></p>
+<div class="vembedr" align="center">
+<div>
+<iframe src="https://web.microsoftstream.com/embed/video/acb452dd-7d4e-46b6-9bcd-ce437cd1a8b2?autoplay=false&amp;showinfo=true" width="711" height="400" style="border:none;" data-external="1"></iframe>
+</div>
+</div>
+<p>Let us start by using the console window as a basic calculator for typing in addition (<code>+</code>), subtraction (<code>-</code>), multiplication (<code>*</code>), division (<code>/</code>) and performing other complex sums. Click inside the R Console window and type <code>19+8</code>, and press enter button to get your answer.</p>
+<p>Perform the following sums by typing them inside the R Console window:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="understanding-data.html#cb2-1" tabindex="-1"></a><span class="co"># Addition</span></span>
+<span id="cb2-2"><a href="understanding-data.html#cb2-2" tabindex="-1"></a><span class="dv">19</span><span class="sc">+</span><span class="dv">8</span></span></code></pre></div>
+<pre><code>## [1] 27</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="understanding-data.html#cb4-1" tabindex="-1"></a><span class="co"># Subtraction</span></span>
+<span id="cb4-2"><a href="understanding-data.html#cb4-2" tabindex="-1"></a><span class="dv">20-89</span></span></code></pre></div>
+<pre><code>## [1] -69</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="understanding-data.html#cb6-1" tabindex="-1"></a><span class="co"># Multiplication</span></span>
+<span id="cb6-2"><a href="understanding-data.html#cb6-2" tabindex="-1"></a><span class="dv">18</span><span class="sc">*</span><span class="dv">20</span></span></code></pre></div>
+<pre><code>## [1] 360</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="understanding-data.html#cb8-1" tabindex="-1"></a><span class="co"># Division</span></span>
+<span id="cb8-2"><a href="understanding-data.html#cb8-2" tabindex="-1"></a><span class="dv">27</span><span class="sc">/</span><span class="dv">3</span></span></code></pre></div>
+<pre><code>## [1] 9</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="understanding-data.html#cb10-1" tabindex="-1"></a><span class="co"># Complex sums</span></span>
+<span id="cb10-2"><a href="understanding-data.html#cb10-2" tabindex="-1"></a>(<span class="dv">5</span><span class="sc">*</span>(<span class="dv">170</span><span class="fl">-3.405</span>)<span class="sc">/</span><span class="dv">91</span>)<span class="sc">+</span><span class="dv">1002</span></span></code></pre></div>
+<pre><code>## [1] 1011.154</code></pre>
+<div class="warning">
+<p><strong>Important Note</strong>: The text that follows after the hash tag # in the above code chunk is a comment and <strong>NOT</strong> actual code. I have put those comments there to tell you what the code below it (i.e., without hash tag # in front of it) what its doing.</p>
+</div>
+<p>Aside from basic arithmetic operations, we can use some basic mathematical functions such as the exponential and natural logarithms:</p>
+<ul>
+<li><p><code>exp()</code> is the exponential function</p></li>
+<li><p><code>log()</code> is the logarithmic function</p></li>
+<li><p><code>^</code> this symbol allows the user to raise a number to a power</p></li>
+</ul>
+<p>Do not worry at all about these function as you will use them later in the weeks to come for transforming variables. For now, perform the following by typing them inside the R-Console window:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="understanding-data.html#cb12-1" tabindex="-1"></a><span class="co"># Exponential</span></span>
+<span id="cb12-2"><a href="understanding-data.html#cb12-2" tabindex="-1"></a><span class="fu">exp</span>(<span class="dv">5</span>)</span></code></pre></div>
+<pre><code>## [1] 148.4132</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="understanding-data.html#cb14-1" tabindex="-1"></a><span class="co"># Natural logarithm</span></span>
+<span id="cb14-2"><a href="understanding-data.html#cb14-2" tabindex="-1"></a><span class="fu">log</span>(<span class="dv">3</span>)</span></code></pre></div>
+<pre><code>## [1] 1.098612</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="understanding-data.html#cb16-1" tabindex="-1"></a><span class="co"># Raising a number to a power e.g., 2 raise to the power of 8</span></span>
+<span id="cb16-2"><a href="understanding-data.html#cb16-2" tabindex="-1"></a><span class="dv">2</span><span class="sc">^</span><span class="dv">8</span></span></code></pre></div>
+<pre><code>## [1] 256</code></pre>
+</div>
+<div id="creating-basic-objects-and-assigning-values-to-them" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> Creating basic objects and assigning values to them<a href="understanding-data.html#creating-basic-objects-and-assigning-values-to-them" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now that we are a bit familiar with using the console as a calculator. Let us build on this and learn one of the most important codes in RStudio which is Assignment Operator.</p>
+<p><strong>Video explanation (Length: 20:28 minutes)</strong></p>
+<div class="vembedr" align="center">
+<div>
+<iframe src="https://web.microsoftstream.com/embed/video/a71574d3-8cbd-49f6-92ea-dfe4fcdfeae8?autoplay=false&amp;showinfo=true" width="711" height="400" style="border:none;" data-external="1"></iframe>
+</div>
+</div>
+<p>This arrow symbol <code>&lt;-</code> is called the <strong>Assignment Operator</strong>. It is typed by pressing the less than symbol <code>&lt;</code> followed by the hyphen symbol <code>-</code>. It allows the user to assign values to an object.</p>
+<p>Objects are defined as stored quantities in RStudio’s environment. These objects can be assigned anything from a numeric value to a string character. For instance, suppose we want to create a numeric object called <code>x</code> and assign it with a value of <code>3</code>. We do this by typing <code>x &lt;- 3</code>. Another example, suppose we want to create a string object called <code>y</code> and we assign it with some text <code>"Hello!"</code>. We do this typing <code>y &lt;- "Hello!"</code>.</p>
+<p>Let us create the objects <code>a</code>, <code>b</code>, <code>c</code>, and <code>d</code> and assign them with numeric values. Perform the following by typing them inside the R Console window:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="understanding-data.html#cb18-1" tabindex="-1"></a><span class="co"># Create an object called &#39;a&#39; and assign the value 17 to it</span></span>
+<span id="cb18-2"><a href="understanding-data.html#cb18-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">17</span></span>
+<span id="cb18-3"><a href="understanding-data.html#cb18-3" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="understanding-data.html#cb18-4" tabindex="-1"></a><span class="co"># Type the object &#39;a&#39; in console as a command to return value 17</span></span>
+<span id="cb18-5"><a href="understanding-data.html#cb18-5" tabindex="-1"></a>a</span></code></pre></div>
+<pre><code>## [1] 17</code></pre>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="understanding-data.html#cb20-1" tabindex="-1"></a><span class="co"># Create an object called &#39;b&#39; and assign the value 10 to it</span></span>
+<span id="cb20-2"><a href="understanding-data.html#cb20-2" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb20-3"><a href="understanding-data.html#cb20-3" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="understanding-data.html#cb20-4" tabindex="-1"></a><span class="co"># Type the object &#39;b&#39; in console as a command to return value 10</span></span>
+<span id="cb20-5"><a href="understanding-data.html#cb20-5" tabindex="-1"></a>b</span></code></pre></div>
+<pre><code>## [1] 10</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="understanding-data.html#cb22-1" tabindex="-1"></a><span class="co"># Create an object called &#39;c&#39; and assign the value 9 to it</span></span>
+<span id="cb22-2"><a href="understanding-data.html#cb22-2" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="dv">9</span></span>
+<span id="cb22-3"><a href="understanding-data.html#cb22-3" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="understanding-data.html#cb22-4" tabindex="-1"></a><span class="co"># Type the object &#39;c&#39; in console as a command to return value 9</span></span>
+<span id="cb22-5"><a href="understanding-data.html#cb22-5" tabindex="-1"></a>c</span></code></pre></div>
+<pre><code>## [1] 9</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="understanding-data.html#cb24-1" tabindex="-1"></a><span class="co"># Create an object called &#39;d&#39; and assign the value 8 to it</span></span>
+<span id="cb24-2"><a href="understanding-data.html#cb24-2" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="dv">8</span></span>
+<span id="cb24-3"><a href="understanding-data.html#cb24-3" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="understanding-data.html#cb24-4" tabindex="-1"></a><span class="co"># Type the object &#39;d&#39; in console as a command to return value 8</span></span>
+<span id="cb24-5"><a href="understanding-data.html#cb24-5" tabindex="-1"></a>d</span></code></pre></div>
+<pre><code>## [1] 8</code></pre>
+<p>Notice how the objects <code>a</code>, <code>b</code>, <code>c</code> and <code>d</code> and its value are stored in RStudio’s environment panel. We can perform the following arithmetic operations with these object values:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="understanding-data.html#cb26-1" tabindex="-1"></a><span class="co"># Use the objects a, b, c &amp; d to type the following maths</span></span>
+<span id="cb26-2"><a href="understanding-data.html#cb26-2" tabindex="-1"></a>(a <span class="sc">+</span> b <span class="sc">+</span> c <span class="sc">+</span> d)<span class="sc">/</span><span class="dv">5</span></span></code></pre></div>
+<pre><code>## [1] 8.8</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="understanding-data.html#cb28-1" tabindex="-1"></a><span class="co"># Use the objects a, b, c &amp; d to type the following maths</span></span>
+<span id="cb28-2"><a href="understanding-data.html#cb28-2" tabindex="-1"></a>(<span class="dv">5</span><span class="sc">*</span>(a<span class="sc">-</span>c)<span class="sc">/</span>d)<span class="sc">^</span><span class="dv">2</span></span></code></pre></div>
+<pre><code>## [1] 25</code></pre>
+<p>Let us create more objects but this time we will assign character string(s) to them. Please note that when typing a string of characters as data in RStudio, you will need to cover them with quotation marks “…”. For example, suppose we want to create a string object called <code>y</code> and assign it with some text <code>"Hello!"</code>. We do this by typing <code>y &lt;- "Hello!"</code>.</p>
+<p>Try these examples of assigning the following character text to an object.</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="understanding-data.html#cb30-1" tabindex="-1"></a><span class="co"># Create an object called &#39;e&#39; and assign the character string &quot;RStudio&quot;</span></span>
+<span id="cb30-2"><a href="understanding-data.html#cb30-2" tabindex="-1"></a>e <span class="ot">&lt;-</span> <span class="st">&quot;RStudio&quot;</span></span>
+<span id="cb30-3"><a href="understanding-data.html#cb30-3" tabindex="-1"></a></span>
+<span id="cb30-4"><a href="understanding-data.html#cb30-4" tabindex="-1"></a><span class="co"># Type the object &#39;e&#39; in the console as a command to return &quot;RStudio&quot;</span></span>
+<span id="cb30-5"><a href="understanding-data.html#cb30-5" tabindex="-1"></a>e</span></code></pre></div>
+<pre><code>## [1] &quot;RStudio&quot;</code></pre>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="understanding-data.html#cb32-1" tabindex="-1"></a><span class="co"># Create an object called &#39;f&#39;, assign character string &quot;Hello world&quot; </span></span>
+<span id="cb32-2"><a href="understanding-data.html#cb32-2" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="st">&quot;Hello world&quot;</span></span>
+<span id="cb32-3"><a href="understanding-data.html#cb32-3" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="understanding-data.html#cb32-4" tabindex="-1"></a><span class="co"># Type the object &#39;f&#39; in the console as a command to return &quot;Hello world&quot;</span></span>
+<span id="cb32-5"><a href="understanding-data.html#cb32-5" tabindex="-1"></a>f</span></code></pre></div>
+<pre><code>## [1] &quot;Hello world&quot;</code></pre>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="understanding-data.html#cb34-1" tabindex="-1"></a><span class="co"># Create an object called &#39;g&#39; and assign &quot;Blade Runner is amazing&quot;</span></span>
+<span id="cb34-2"><a href="understanding-data.html#cb34-2" tabindex="-1"></a>g <span class="ot">&lt;-</span> <span class="st">&quot;Blade Runner is amazing&quot;</span></span>
+<span id="cb34-3"><a href="understanding-data.html#cb34-3" tabindex="-1"></a></span>
+<span id="cb34-4"><a href="understanding-data.html#cb34-4" tabindex="-1"></a><span class="co"># Type the object &#39;g&#39; in the console to return the result</span></span>
+<span id="cb34-5"><a href="understanding-data.html#cb34-5" tabindex="-1"></a>g</span></code></pre></div>
+<pre><code>## [1] &quot;Blade Runner is amazing&quot;</code></pre>
+<p>We are now familiar with using the console and assigning (numeric and string) values to objects. The parts covered in from section 1.3 and 1.4 are the initial building blocks for coding &amp; creating data sets.</p>
+<p>Let us progress to section 1.5. From this point onwards, we will learn the basics of managing data and etiquettes, which includes creating data frames, as well as importing CSVs &amp; saving R-objects as a CSV file, and setting up a work directory in RStudio server.</p>
+</div>
+<div id="data-entry-in-rstudio" class="section level2 hasAnchor" number="1.6">
+<h2><span class="header-section-number">1.6</span> Data entry in RStudio<a href="understanding-data.html#data-entry-in-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As you have already seen, RStudio is an object-oriented software package and so entering data is slightly different for the usual way when inputting information into a spreadsheet (e.g., Microsoft Excel etc.,). Here, you will need to enter the information as <strong>Vector</strong> objects before combining them into a <strong>Data Frame</strong> object.</p>
+<p>Consider this incredibly <strong><em>Wishie Washy</em></strong> example of some data containing additional health information of 10 people. It contains the variable (or column) names <code>'id'</code>, <code>'name'</code>, <code>'height'</code>, <code>'weight'</code> and <code>'gender'</code>.</p>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>id</strong></th>
+<th><strong>name</strong></th>
+<th><strong>height</strong></th>
+<th><strong>weight</strong></th>
+<th><strong>gender</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Sam</td>
+<td>1.65</td>
+<td>64.2</td>
+<td>M</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Kofi</td>
+<td>1.77</td>
+<td>80.3</td>
+<td>M</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Kate</td>
+<td>1.70</td>
+<td>58.7</td>
+<td>F</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Cindy</td>
+<td>1.68</td>
+<td>75.0</td>
+<td>F</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Patel</td>
+<td>1.80</td>
+<td>69.6</td>
+<td>M</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>James</td>
+<td>1.60</td>
+<td>49.3</td>
+<td>M</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Tatiana</td>
+<td>1.66</td>
+<td>52.7</td>
+<td>F</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Roberto</td>
+<td>1.71</td>
+<td>40.0</td>
+<td>M</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Rubio</td>
+<td>1.63</td>
+<td>55.6</td>
+<td>M</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Fatima</td>
+<td>1.73</td>
+<td>62.5</td>
+<td>F</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>In RStudio, data is entered as a sequence of elements and listed inside an object called a <strong>Vector</strong>. For instance, if we have three age values of 12, 57 and 26 years, and we want to enter this in RStudio, we need to use the function <code>c()</code> and combine these three elements into a <strong>Vector</strong> object.</p>
+<p>Hence, the code will be <code>c(12, 57, 26)</code>. We can assign this to something by typing this code <code>age &lt;- c(12, 57, 26)</code>. Any time you type <code>age</code> into RStudio console. It will return these three values unless you chose to overwrite it with different information.</p>
+<p>Let us look at this more closely with the <code>id</code> variable from the above data. Each person has an ID number from 1 to 10. We are going to list the numbers 1, 2, 3, 4, 5, 6, 7, 8, 9 and 10 as a sequence of elements into a vector using <code>c()</code> and then assign it to as a vector object calling it <code>id</code>.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="understanding-data.html#cb36-1" tabindex="-1"></a><span class="co"># Create &#39;id&#39; vector object </span></span>
+<span id="cb36-2"><a href="understanding-data.html#cb36-2" tabindex="-1"></a>id <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>)</span>
+<span id="cb36-3"><a href="understanding-data.html#cb36-3" tabindex="-1"></a></span>
+<span id="cb36-4"><a href="understanding-data.html#cb36-4" tabindex="-1"></a><span class="co"># Type the vector object &#39;id&#39; in console to return output</span></span>
+<span id="cb36-5"><a href="understanding-data.html#cb36-5" tabindex="-1"></a>id</span></code></pre></div>
+<pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+<p>Now, let us enter the same remaining columns for <code>'name'</code>, <code>'height'</code>, <code>'weight'</code> and <code>'gender'</code> like we did for ‘id’:</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="understanding-data.html#cb38-1" tabindex="-1"></a><span class="co"># Create &#39;name&#39; vector object</span></span>
+<span id="cb38-2"><a href="understanding-data.html#cb38-2" tabindex="-1"></a>name <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Sam&quot;</span>, <span class="st">&quot;Kofi&quot;</span>, <span class="st">&quot;Kate&quot;</span>, <span class="st">&quot;Cindy&quot;</span>, <span class="st">&quot;Patel&quot;</span>, <span class="st">&quot;Harry&quot;</span>, <span class="st">&quot;Kimba&quot;</span>, <span class="st">&quot;Roberto&quot;</span>, <span class="st">&quot;Rubio&quot;</span>, <span class="st">&quot;Fatima&quot;</span>)</span>
+<span id="cb38-3"><a href="understanding-data.html#cb38-3" tabindex="-1"></a></span>
+<span id="cb38-4"><a href="understanding-data.html#cb38-4" tabindex="-1"></a><span class="co"># Create &#39;height&#39; (in meters) vector object</span></span>
+<span id="cb38-5"><a href="understanding-data.html#cb38-5" tabindex="-1"></a>height <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">1.65</span>, <span class="fl">1.77</span>, <span class="fl">1.70</span>, <span class="fl">1.68</span>, <span class="fl">1.80</span>, <span class="fl">1.60</span>, <span class="fl">1.66</span>, <span class="fl">1.71</span>, <span class="fl">1.63</span>, <span class="fl">1.73</span>)</span>
+<span id="cb38-6"><a href="understanding-data.html#cb38-6" tabindex="-1"></a></span>
+<span id="cb38-7"><a href="understanding-data.html#cb38-7" tabindex="-1"></a><span class="co"># Create &#39;weight&#39; (in kg) vector object</span></span>
+<span id="cb38-8"><a href="understanding-data.html#cb38-8" tabindex="-1"></a>weight <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">64.2</span>, <span class="fl">80.3</span>, <span class="fl">58.7</span>, <span class="fl">75.0</span>, <span class="fl">69.6</span>, <span class="fl">49.3</span>, <span class="fl">52.7</span>, <span class="fl">40.0</span>, <span class="fl">55.6</span>, <span class="fl">62.5</span>)</span>
+<span id="cb38-9"><a href="understanding-data.html#cb38-9" tabindex="-1"></a></span>
+<span id="cb38-10"><a href="understanding-data.html#cb38-10" tabindex="-1"></a><span class="co"># Create &#39;gender&#39; vector object</span></span>
+<span id="cb38-11"><a href="understanding-data.html#cb38-11" tabindex="-1"></a>gender <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;M&quot;</span>, <span class="st">&quot;M&quot;</span>, <span class="st">&quot;F&quot;</span>, <span class="st">&quot;F&quot;</span>, <span class="st">&quot;M&quot;</span>, <span class="st">&quot;M&quot;</span>, <span class="st">&quot;F&quot;</span>, <span class="st">&quot;M&quot;</span>, <span class="st">&quot;M&quot;</span>, <span class="st">&quot;F&quot;</span>)</span></code></pre></div>
+<p>Now, that we have the vector objects ready. We can bring them together to create a proper data set. This new object is called a <strong>Data Frame</strong>. We need to list the vectors inside the <code>data.frame()</code> function.</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="understanding-data.html#cb39-1" tabindex="-1"></a><span class="co"># Create a dataset (data frame)</span></span>
+<span id="cb39-2"><a href="understanding-data.html#cb39-2" tabindex="-1"></a>dataset <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(id, name, height, weight, gender)</span>
+<span id="cb39-3"><a href="understanding-data.html#cb39-3" tabindex="-1"></a></span>
+<span id="cb39-4"><a href="understanding-data.html#cb39-4" tabindex="-1"></a><span class="co"># Type the data frame object &#39;dataset&#39; in console to see output</span></span>
+<span id="cb39-5"><a href="understanding-data.html#cb39-5" tabindex="-1"></a>dataset</span></code></pre></div>
+<pre><code>##    id    name height weight gender
+## 1   1     Sam   1.65   64.2      M
+## 2   2    Kofi   1.77   80.3      M
+## 3   3    Kate   1.70   58.7      F
+## 4   4   Cindy   1.68   75.0      F
+## 5   5   Patel   1.80   69.6      M
+## 6   6   Harry   1.60   49.3      M
+## 7   7   Kimba   1.66   52.7      F
+## 8   8 Roberto   1.71   40.0      M
+## 9   9   Rubio   1.63   55.6      M
+## 10 10  Fatima   1.73   62.5      F</code></pre>
+<div class="note">
+<p><strong>Important Note</strong>: The column ‘id’ is numeric variable with integers. The second column ‘name’ is a text variable with strings. The third &amp; fourth columns ‘height’ and ‘weight’ are examples of a numeric variables with real numbers – both variables are <strong>continuous</strong>. The variable ‘gender’ is text variable with strings – however, this type of variable is classed as a <strong>categorical</strong> variable as individuals were categorised as either ‘M’ and ‘F’.</p>
+</div>
+</div>
+<div id="uploading-data-to-rstudio-server-and-importing-data-into-the-environment" class="section level2 hasAnchor" number="1.7">
+<h2><span class="header-section-number">1.7</span> Uploading data to RStudio Server and importing data into the environment<a href="understanding-data.html#uploading-data-to-rstudio-server-and-importing-data-into-the-environment" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We are going to import the downloaded data for Week 1 into RStudio. It contains information pertained to 58 primary schools in Ealing. We can open spreadsheets, particularly, CSV files in an organised way by uploading the file in the RStudio Server and then opening it using the <code>read.csv()</code> function.</p>
+<p><strong>Video explanation (Length: 12:15 minutes)</strong></p>
+<div class="vembedr" align="center">
+<div>
+<iframe src="https://web.microsoftstream.com/embed/video/e7abb9d1-290e-4e50-b470-9710e0bf9384?autoplay=false&amp;showinfo=true" width="711" height="400" style="border:none;" data-external="1"></iframe>
+</div>
+</div>
+<p>We can do this in four steps:</p>
+<p><img src="images/general/Importing_data.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Step 1. Keep the space in your personal directory <code>/nfs/cfs/home2/XXXX/ucl_username</code> tidy by creating new folder and naming it <code>Week 1</code> simply by clicking the <code>New Folder</code> button in the bottom-right panel.</p>
+<p>Step 2. Next, click on the <code>Week 1</code> folder to enter it, and then click on the <code>Upload</code> button and select the downloaded CSV file <code>Primary Schools in Ealing.csv</code> to be uploaded into the RStudio Server.</p>
+<p>Step 3. We must set the directory to the folder location in the server to where the CSV file was uploaded by clicking on the <code>More</code> &gt;&gt; <code>Set As Working Directory</code>.</p>
+<p>Step 4. Finally, we can import the data using the <code>read.csv()</code> function. The code syntax in the script should read as follows:</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="understanding-data.html#cb41-1" tabindex="-1"></a><span class="co"># Load data into RStudio. The spreadsheet is stored in the object called &#39;SchoolData&#39;</span></span>
+<span id="cb41-2"><a href="understanding-data.html#cb41-2" tabindex="-1"></a>SchoolData <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Primary Schools in Ealing.csv&quot;</span>)</span></code></pre></div>
+<p>The loaded dataset contains the following variables:</p>
+<ul>
+<li><p><code>SchoolName</code>: Name of school in Ealing (<strong>string</strong>)</p></li>
+<li><p><code>Type</code>: School classified as a ‘Primary’ school (<strong>string</strong>)</p></li>
+<li><p><code>AgeGroup</code>: Categorised as three age groups i.e., <code>3-11</code>, <code>4-11</code>, <code>7-11</code> (<strong>categorical</strong>)</p></li>
+<li><p><code>NumberBoys</code>: Total number of boys in a primary school (<strong>Discrete/counts</strong>)</p></li>
+<li><p><code>NumberGirls</code>: Total number of girls in a primary school (<strong>Discrete/counts</strong>)</p></li>
+<li><p><code>TotalStudents</code>: Total number of students in a primary school (<strong>Discrete/counts</strong>)</p></li>
+<li><p><code>OfstedGrade</code>: Overall school performance <code>1</code> = excellent, <code>2</code> = good, <code>3</code> = requires improvement, <code>4</code> = inadequate (<strong>categorical</strong>)</p></li>
+</ul>
+<p>We have learned a lot of basic things in RStudio, the stuff shown in this section in particular will be used quite a lot in future tutorials - so do get use to keep your space clean with new folders, and use uploading and importing data. Let us progress to the final section and learn some basics of working with imported data in R.</p>
+</div>
+<div id="working-with-data-in-rstudio" class="section level2 hasAnchor" number="1.8">
+<h2><span class="header-section-number">1.8</span> Working with data in RStudio<a href="understanding-data.html#working-with-data-in-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="useful-functions" class="section level3 hasAnchor" number="1.8.1">
+<h3><span class="header-section-number">1.8.1</span> Useful functions<a href="understanding-data.html#useful-functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>One can examine the structure of the imported data with the following basic functions.</p>
+<ul>
+<li><p><code>str()</code>: tells the user which columns in the data frame are character or numeric variables</p></li>
+<li><p><code>head()</code>: allows the user to see the first top 10 rows of the data frame</p></li>
+<li><p><code>tail()</code>: allows the user to see the last bottom 10 rows of the data frame</p></li>
+<li><p><code>ncol()</code>: tells the user the total number of columns present in the data frame</p></li>
+<li><p><code>nrow()</code>: tells the user the total number of observations (or rows) present in the data frame</p></li>
+<li><p><code>names()</code>: returns the list column names present in the data frame</p></li>
+</ul>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="understanding-data.html#cb42-1" tabindex="-1"></a><span class="co"># Play with code</span></span>
+<span id="cb42-2"><a href="understanding-data.html#cb42-2" tabindex="-1"></a><span class="fu">str</span>(SchoolData)</span></code></pre></div>
+<pre><code>## &#39;data.frame&#39;:    58 obs. of  6 variables:
+##  $ SchoolName   : chr  &quot;Berrymede Junior School&quot; &quot;East Acton Primary School&quot; &quot;Oldfield Primary School&quot; &quot;North Ealing Primary School&quot; ...
+##  $ Type         : chr  &quot;Primary&quot; &quot;Primary&quot; &quot;Primary&quot; &quot;Primary&quot; ...
+##  $ NumberBoys   : int  180 160 225 340 265 230 155 285 185 150 ...
+##  $ NumberGirls  : int  200 165 240 355 205 205 180 290 190 125 ...
+##  $ TotalStudents: int  377 329 465 697 471 435 335 573 373 273 ...
+##  $ OfstedGrade  : int  2 2 2 2 2 2 2 3 2 2 ...</code></pre>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="understanding-data.html#cb44-1" tabindex="-1"></a><span class="co"># Play with code</span></span>
+<span id="cb44-2"><a href="understanding-data.html#cb44-2" tabindex="-1"></a><span class="fu">nrow</span>(SchoolData)</span></code></pre></div>
+<pre><code>## [1] 58</code></pre>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="understanding-data.html#cb46-1" tabindex="-1"></a><span class="co"># Play with code</span></span>
+<span id="cb46-2"><a href="understanding-data.html#cb46-2" tabindex="-1"></a><span class="fu">names</span>(SchoolData)</span></code></pre></div>
+<pre><code>## [1] &quot;SchoolName&quot;    &quot;Type&quot;          &quot;NumberBoys&quot;    &quot;NumberGirls&quot;  
+## [5] &quot;TotalStudents&quot; &quot;OfstedGrade&quot;</code></pre>
+<p>You can examine specific variables from this data frame, for instance, we can get observation with the primary school that has the minimum and maximum number of students using the <code>min()</code> and <code>max()</code> function, respectively. We can also compute the total number primary students in Ealing using the <code>sum()</code>.</p>
+<p>We can compute these values using the <code>$</code> symbol to select the column of interest, which is <code>TotalStudents</code>. Specify the name of the data frame (i.e., <code>SchoolData</code>) and then select the column of interest after the <code>$</code></p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="understanding-data.html#cb48-1" tabindex="-1"></a><span class="co"># maximum value</span></span>
+<span id="cb48-2"><a href="understanding-data.html#cb48-2" tabindex="-1"></a><span class="fu">max</span>(SchoolData<span class="sc">$</span>TotalStudents)</span></code></pre></div>
+<pre><code>## [1] 891</code></pre>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="understanding-data.html#cb50-1" tabindex="-1"></a><span class="co"># minimum value</span></span>
+<span id="cb50-2"><a href="understanding-data.html#cb50-2" tabindex="-1"></a><span class="fu">min</span>(SchoolData<span class="sc">$</span>TotalStudents)</span></code></pre></div>
+<pre><code>## [1] 239</code></pre>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="understanding-data.html#cb52-1" tabindex="-1"></a><span class="co"># total value</span></span>
+<span id="cb52-2"><a href="understanding-data.html#cb52-2" tabindex="-1"></a><span class="fu">sum</span>(SchoolData<span class="sc">$</span>TotalStudents)</span></code></pre></div>
+<pre><code>## [1] 29473</code></pre>
+</div>
+<div id="basic-subsetting-and-manipulation-of-data" class="section level3 hasAnchor" number="1.8.2">
+<h3><span class="header-section-number">1.8.2</span> Basic subsetting and manipulation of data<a href="understanding-data.html#basic-subsetting-and-manipulation-of-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>One can subset or restrict the data frame by specifying which row(s) and column(s) to keep or discard using this square bracket notation <code>dataframe[Row, Column]</code>.</p>
+<p>For example:</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="understanding-data.html#cb54-1" tabindex="-1"></a><span class="co"># To select the 1st row of the first column in SchoolData</span></span>
+<span id="cb54-2"><a href="understanding-data.html#cb54-2" tabindex="-1"></a>SchoolData[<span class="dv">1</span>,<span class="dv">1</span>]</span></code></pre></div>
+<pre><code>## [1] &quot;Berrymede Junior School&quot;</code></pre>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="understanding-data.html#cb56-1" tabindex="-1"></a><span class="co"># To select the first 5 rows of the first column</span></span>
+<span id="cb56-2"><a href="understanding-data.html#cb56-2" tabindex="-1"></a>SchoolData[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="dv">1</span>]</span></code></pre></div>
+<pre><code>## [1] &quot;Berrymede Junior School&quot;     &quot;East Acton Primary School&quot;  
+## [3] &quot;Oldfield Primary School&quot;     &quot;North Ealing Primary School&quot;
+## [5] &quot;St John&#39;s Primary School&quot;</code></pre>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="understanding-data.html#cb58-1" tabindex="-1"></a><span class="co"># To select the first 5 rows of the 1st, 5th and 6th column</span></span>
+<span id="cb58-2"><a href="understanding-data.html#cb58-2" tabindex="-1"></a>SchoolData[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">5</span><span class="sc">:</span><span class="dv">6</span>)]</span></code></pre></div>
+<pre><code>##                    SchoolName TotalStudents OfstedGrade
+## 1     Berrymede Junior School           377           2
+## 2   East Acton Primary School           329           2
+## 3     Oldfield Primary School           465           2
+## 4 North Ealing Primary School           697           2
+## 5    St John&#39;s Primary School           471           2</code></pre>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="understanding-data.html#cb60-1" tabindex="-1"></a><span class="co"># You can store sub-setted data into an object</span></span>
+<span id="cb60-2"><a href="understanding-data.html#cb60-2" tabindex="-1"></a>ReducedData <span class="ot">&lt;-</span> SchoolData[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">5</span><span class="sc">:</span><span class="dv">6</span>)]</span></code></pre></div>
+<p>Another trick one can do is use other columns or variables within a data frame to create another variable. This technique is essentially important when cleaning and managing data.</p>
+<p>From the data, we can derive proportion (%) of students who are boys for each school using $. Here, we can create a new column called <code>PercentBoys</code> as follows:</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="understanding-data.html#cb61-1" tabindex="-1"></a><span class="co"># Create &#39;PercentBoys&#39; in the data frame &#39;SchoolData&#39; based on NumberBoys column and TotalStudents column</span></span>
+<span id="cb61-2"><a href="understanding-data.html#cb61-2" tabindex="-1"></a>SchoolData<span class="sc">$</span>PercentBoys <span class="ot">&lt;-</span> SchoolData<span class="sc">$</span>NumberBoys<span class="sc">/</span>SchoolData<span class="sc">$</span>TotalStudents <span class="sc">*</span> <span class="dv">100</span></span></code></pre></div>
+</div>
+<div id="basic-visualisation" class="section level3 hasAnchor" number="1.8.3">
+<h3><span class="header-section-number">1.8.3</span> Basic visualisation<a href="understanding-data.html#basic-visualisation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The school data only contains variables that are in counts or categories. Hence, we can only use visualisations such as <strong>pie charts</strong> or <strong>bar charts</strong> for such types of data (of course, in week 2, we’ll explore ways for visualising continuous data).</p>
+<p>The <code>OfstedGrade</code> variable has classified schools according to the overall performance from 1 (outstanding) to 4 (poor). We can visual the frequency of schools by performance grade in a bar chart using <code>barchart()</code> function:</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="understanding-data.html#cb62-1" tabindex="-1"></a><span class="co"># tabulate the frequency of schools based on the OfstedGrade using table()</span></span>
+<span id="cb62-2"><a href="understanding-data.html#cb62-2" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">table</span>(SchoolData<span class="sc">$</span>OfstedGrade)</span>
+<span id="cb62-3"><a href="understanding-data.html#cb62-3" tabindex="-1"></a>counts</span></code></pre></div>
+<pre><code>## 
+##  1  2  3  4 
+##  6 47  4  1</code></pre>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="understanding-data.html#cb64-1" tabindex="-1"></a><span class="co">#Pass the counts into the barchart()</span></span>
+<span id="cb64-2"><a href="understanding-data.html#cb64-2" tabindex="-1"></a><span class="fu">barplot</span>(counts)</span></code></pre></div>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="understanding-data.html#cb65-1" tabindex="-1"></a><span class="co">#Fully labelled Bar Plot</span></span>
+<span id="cb65-2"><a href="understanding-data.html#cb65-2" tabindex="-1"></a><span class="fu">barplot</span>(counts, <span class="at">main=</span><span class="st">&quot;School Distribution based on OFSTED performance&quot;</span>, <span class="at">xlab =</span><span class="st">&quot;OFSTED grades&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Number of Schools&quot;</span>)</span></code></pre></div>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
+<p>We can represent the above data again as a piechart reporting percentages instead using the <code>pie()</code></p>
+<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="understanding-data.html#cb66-1" tabindex="-1"></a><span class="co"># tabulate the frequency of schools based on the OfstedGrade using table()</span></span>
+<span id="cb66-2"><a href="understanding-data.html#cb66-2" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">table</span>(SchoolData<span class="sc">$</span>OfstedGrade)</span>
+<span id="cb66-3"><a href="understanding-data.html#cb66-3" tabindex="-1"></a>counts</span></code></pre></div>
+<pre><code>## 
+##  1  2  3  4 
+##  6 47  4  1</code></pre>
+<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="understanding-data.html#cb68-1" tabindex="-1"></a><span class="co">#Pass the counts into the pie()</span></span>
+<span id="cb68-2"><a href="understanding-data.html#cb68-2" tabindex="-1"></a><span class="fu">pie</span>(counts)</span></code></pre></div>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="understanding-data.html#cb69-1" tabindex="-1"></a><span class="co">#Fully labelled Bar Plot</span></span>
+<span id="cb69-2"><a href="understanding-data.html#cb69-2" tabindex="-1"></a><span class="fu">pie</span>(counts, <span class="at">main=</span><span class="st">&quot;Piechart on OFSTED performance&quot;</span>, <span class="at">labels=</span><span class="fu">c</span>(<span class="st">&quot;Outstanding (1)&quot;</span>, <span class="st">&quot;Good (2)&quot;</span>, <span class="st">&quot;Not Good (3)&quot;</span>, <span class="st">&quot;Bad (4)&quot;</span>))</span></code></pre></div>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-28-2.png" width="672" /></p>
+<p>We can aggregate the number of students by performance to eyeball whether schools with more student perform either poorly or good on the OFSTED scale.</p>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="understanding-data.html#cb70-1" tabindex="-1"></a><span class="co"># aggregate the frequency of students from schools based of OfstedGrade in a table using the tapply()</span></span>
+<span id="cb70-2"><a href="understanding-data.html#cb70-2" tabindex="-1"></a></span>
+<span id="cb70-3"><a href="understanding-data.html#cb70-3" tabindex="-1"></a>totals <span class="ot">&lt;-</span> <span class="fu">tapply</span>(SchoolData<span class="sc">$</span>TotalStudents, SchoolData<span class="sc">$</span>OfstedGrade, <span class="at">FUN=</span>sum)</span>
+<span id="cb70-4"><a href="understanding-data.html#cb70-4" tabindex="-1"></a>totals</span></code></pre></div>
+<pre><code>##     1     2     3     4 
+##  3210 24225  1692   346</code></pre>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="understanding-data.html#cb72-1" tabindex="-1"></a><span class="co">#Fully labelled Bar Plot</span></span>
+<span id="cb72-2"><a href="understanding-data.html#cb72-2" tabindex="-1"></a><span class="fu">barplot</span>(totals, <span class="at">main=</span><span class="st">&quot;Student Distribution based on OFSTED performance&quot;</span>, <span class="at">xlab =</span><span class="st">&quot;OFSTED grades&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Number of Primary Students in Ealing&quot;</span>)</span></code></pre></div>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<p>The <code>OfstedGrade</code> variable has classified schools according to the overall performance from 1 (outstanding) to 4 (poor). We can visual the frequency of schools by performance grade in a bar chart using <code>barchart()</code> function:</p>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="understanding-data.html#cb73-1" tabindex="-1"></a><span class="co"># tabulate the frequency of schools based on the OfstedGrade using table()</span></span>
+<span id="cb73-2"><a href="understanding-data.html#cb73-2" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">table</span>(SchoolData<span class="sc">$</span>OfstedGrade)</span>
+<span id="cb73-3"><a href="understanding-data.html#cb73-3" tabindex="-1"></a></span>
+<span id="cb73-4"><a href="understanding-data.html#cb73-4" tabindex="-1"></a><span class="co"># Pass the counts to the barplot() function &amp; generate fully labelled Bar Plot</span></span>
+<span id="cb73-5"><a href="understanding-data.html#cb73-5" tabindex="-1"></a><span class="fu">barplot</span>(counts, <span class="at">main=</span><span class="st">&quot;School Distribution based on OFSTED performance&quot;</span>, <span class="at">xlab =</span><span class="st">&quot;OFSTED grades&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Number of Schools&quot;</span>)</span></code></pre></div>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+</div>
+<div id="frequency-distributions" class="section level3 hasAnchor" number="1.8.4">
+<h3><span class="header-section-number">1.8.4</span> Frequency Distributions<a href="understanding-data.html#frequency-distributions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A frequency distribution table is a nice to way to perform a simple univariable analysis to summarize the number of schools (frequency) that have a set number of students within certain fixed ranges.</p>
+<p>Let us gauge the minimum and maximum number of students, and create ranges between these two values.</p>
+<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb74-1"><a href="understanding-data.html#cb74-1" tabindex="-1"></a><span class="fu">min</span>(SchoolData<span class="sc">$</span>TotalStudents)</span></code></pre></div>
+<pre><code>## [1] 239</code></pre>
+<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="understanding-data.html#cb76-1" tabindex="-1"></a><span class="fu">max</span>(SchoolData<span class="sc">$</span>TotalStudents)</span></code></pre></div>
+<pre><code>## [1] 891</code></pre>
+<p>We are going to create a new ranges column from 200 (based from lowest value i.e., 239) to 900 (i.e., based on the highest which is 891) to look something like <code>200-300</code>, <code>301-400</code>, <code>401-500</code>, …, <code>801-900</code> by cutting the <code>TotalStudents</code> using the <code>cut()</code> function. This will help us to create the desired frequency distribution table in RStudio.</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="understanding-data.html#cb78-1" tabindex="-1"></a>SchoolData<span class="sc">$</span>Ranges <span class="ot">&lt;-</span> <span class="fu">cut</span>(SchoolData<span class="sc">$</span>TotalStudents, <span class="at">breaks=</span><span class="fu">c</span>(<span class="dv">200</span>, <span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>, <span class="dv">900</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;200-300&quot;</span>,<span class="st">&quot;301-400&quot;</span>,<span class="st">&quot;401-500&quot;</span>,<span class="st">&quot;501-600&quot;</span>,<span class="st">&quot;601-700&quot;</span>,<span class="st">&quot;701-800&quot;</span>,<span class="st">&quot;801-900&quot;</span>))</span></code></pre></div>
+<p>Now, lets create the frequency table that shows the following: (1.) the frequency of schools with student numbers in those ranges; (2.) Cumulative frequency of schools; and (3.) proportions of schools falling in those ranges.</p>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="understanding-data.html#cb79-1" tabindex="-1"></a>freqtable <span class="ot">&lt;-</span> <span class="fu">table</span>(SchoolData<span class="sc">$</span>Ranges)</span>
+<span id="cb79-2"><a href="understanding-data.html#cb79-2" tabindex="-1"></a><span class="co"># see frequency of schools only</span></span>
+<span id="cb79-3"><a href="understanding-data.html#cb79-3" tabindex="-1"></a>freqtable</span></code></pre></div>
+<pre><code>## 
+## 200-300 301-400 401-500 501-600 601-700 701-800 801-900 
+##       5       8      20      11       7       4       3</code></pre>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="understanding-data.html#cb81-1" tabindex="-1"></a><span class="co"># now, add the cumulative frequency and proportion to get table output in RStudio</span></span>
+<span id="cb81-2"><a href="understanding-data.html#cb81-2" tabindex="-1"></a>Output <span class="ot">&lt;-</span> <span class="fu">transform</span>(freqtable, <span class="at">CumuFreq =</span> <span class="fu">cumsum</span>(Freq), <span class="at">Proportions=</span><span class="fu">prop.table</span>(Freq))</span>
+<span id="cb81-3"><a href="understanding-data.html#cb81-3" tabindex="-1"></a><span class="co"># see final output</span></span>
+<span id="cb81-4"><a href="understanding-data.html#cb81-4" tabindex="-1"></a>Output</span></code></pre></div>
+<pre><code>##      Var1 Freq CumuFreq Proportions
+## 1 200-300    5        5  0.08620690
+## 2 301-400    8       13  0.13793103
+## 3 401-500   20       33  0.34482759
+## 4 501-600   11       44  0.18965517
+## 5 601-700    7       51  0.12068966
+## 6 701-800    4       55  0.06896552
+## 7 801-900    3       58  0.05172414</code></pre>
+<p>Above code shows you the rapid way of getting the frequency table. It only gives you the table though and there’s not decent way of getting the desired plots such as histogram and cumulative frequency plots because it involves of a lot of <a href="https://www.sciencedirect.com/science/article/pii/S2405896315001986"><strong>data wrangling</strong></a>…</p>
+<p>Here is the complete code - the R-way for do this analysis.</p>
+<p><strong>Full Code</strong></p>
+<p>Let’s create the appropriate graphical outputs to accompany the frequency table. Just like how we created the ranges from 200 to 900 (of intervals 100). We can also use the <code>seq()</code> function. This generates a sequence of numbers (i.e., <code>200, 300, 400, 500, 600, 700, 800, 900</code>) which we can also create the groupings:</p>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="understanding-data.html#cb83-1" tabindex="-1"></a><span class="co"># start at: 200</span></span>
+<span id="cb83-2"><a href="understanding-data.html#cb83-2" tabindex="-1"></a><span class="co"># end at:   900</span></span>
+<span id="cb83-3"><a href="understanding-data.html#cb83-3" tabindex="-1"></a><span class="co"># interval: 100</span></span>
+<span id="cb83-4"><a href="understanding-data.html#cb83-4" tabindex="-1"></a>classes <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">200</span>, <span class="dv">900</span>, <span class="dv">100</span>)</span>
+<span id="cb83-5"><a href="understanding-data.html#cb83-5" tabindex="-1"></a>classes</span></code></pre></div>
+<pre><code>## [1] 200 300 400 500 600 700 800 900</code></pre>
+<p>We are going to use the <code>cut()</code> function slice up the <code>TotalStudents</code> column accordingly into the bins or groupings we created from the <code>seq()</code>. This should categorise the schools in Ealing based on the number of students into groups of <code>200-300</code>, <code>301-400</code>, <code>401-500</code>, …, <code>801-900</code>.</p>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="understanding-data.html#cb85-1" tabindex="-1"></a>SchoolData<span class="sc">$</span>Groups <span class="ot">&lt;-</span> <span class="fu">cut</span>(SchoolData<span class="sc">$</span>TotalStudents, <span class="at">breaks=</span>classes)</span>
+<span id="cb85-2"><a href="understanding-data.html#cb85-2" tabindex="-1"></a>SchoolData<span class="sc">$</span>Groups</span></code></pre></div>
+<pre><code>##  [1] (300,400] (300,400] (400,500] (600,700] (400,500] (400,500] (300,400]
+##  [8] (500,600] (300,400] (200,300] (400,500] (400,500] (300,400] (400,500]
+## [15] (600,700] (500,600] (500,600] (600,700] (400,500] (500,600] (200,300]
+## [22] (500,600] (300,400] (400,500] (700,800] (500,600] (800,900] (800,900]
+## [29] (500,600] (400,500] (800,900] (700,800] (600,700] (600,700] (500,600]
+## [36] (400,500] (500,600] (200,300] (400,500] (700,800] (400,500] (600,700]
+## [43] (400,500] (300,400] (300,400] (400,500] (400,500] (400,500] (200,300]
+## [50] (600,700] (500,600] (500,600] (400,500] (400,500] (400,500] (700,800]
+## [57] (200,300] (400,500]
+## 7 Levels: (200,300] (300,400] (400,500] (500,600] (600,700] ... (800,900]</code></pre>
+<p>We going to generate the frequency table into a data frame and calculate components of our frequency table: i.e., <strong>frequency</strong>, <strong>relative frequency</strong> (or <strong>percentage</strong>), <strong>cumulative frequency</strong> and <strong>relative cumulative frequency</strong> all from the <code>Group</code> column:</p>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="understanding-data.html#cb87-1" tabindex="-1"></a><span class="co">#this creates the frequency tables</span></span>
+<span id="cb87-2"><a href="understanding-data.html#cb87-2" tabindex="-1"></a>frequency_results <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">table</span>(SchoolData<span class="sc">$</span>Groups))</span>
+<span id="cb87-3"><a href="understanding-data.html#cb87-3" tabindex="-1"></a><span class="co">#this renames the columns</span></span>
+<span id="cb87-4"><a href="understanding-data.html#cb87-4" tabindex="-1"></a><span class="fu">colnames</span>(frequency_results)[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">&quot;Groups&quot;</span>    </span>
+<span id="cb87-5"><a href="understanding-data.html#cb87-5" tabindex="-1"></a><span class="fu">colnames</span>(frequency_results)[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">&quot;Frequency&quot;</span> </span>
+<span id="cb87-6"><a href="understanding-data.html#cb87-6" tabindex="-1"></a><span class="co">#this show the names of the columns</span></span>
+<span id="cb87-7"><a href="understanding-data.html#cb87-7" tabindex="-1"></a><span class="fu">names</span>(frequency_results)</span></code></pre></div>
+<pre><code>## [1] &quot;Groups&quot;    &quot;Frequency&quot;</code></pre>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="understanding-data.html#cb89-1" tabindex="-1"></a><span class="co"># print frequency table</span></span>
+<span id="cb89-2"><a href="understanding-data.html#cb89-2" tabindex="-1"></a>frequency_results</span></code></pre></div>
+<pre><code>##      Groups Frequency
+## 1 (200,300]         5
+## 2 (300,400]         8
+## 3 (400,500]        20
+## 4 (500,600]        11
+## 5 (600,700]         7
+## 6 (700,800]         4
+## 7 (800,900]         3</code></pre>
+<p>We got just the frequencies. Now, we to calculate the following: <strong>frequency</strong>, <strong>relative frequency</strong> (or <strong>percentage</strong>), <strong>cumulative frequency</strong> and <strong>relative cumulative frequency</strong>. The can be done as follows</p>
+<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="understanding-data.html#cb91-1" tabindex="-1"></a><span class="co"># calculating the relative freq., cumulative freq., and cumulative relative frequency</span></span>
+<span id="cb91-2"><a href="understanding-data.html#cb91-2" tabindex="-1"></a>frequency_results<span class="sc">$</span>RelativeFreq <span class="ot">&lt;-</span> frequency_results<span class="sc">$</span>Frequency<span class="sc">/</span><span class="fu">sum</span>(frequency_results<span class="sc">$</span>Frequency)</span>
+<span id="cb91-3"><a href="understanding-data.html#cb91-3" tabindex="-1"></a>frequency_results<span class="sc">$</span>CumulativeFreq <span class="ot">&lt;-</span> <span class="fu">cumsum</span>(frequency_results<span class="sc">$</span>Frequency)</span>
+<span id="cb91-4"><a href="understanding-data.html#cb91-4" tabindex="-1"></a>frequency_results<span class="sc">$</span>CumulativeRelFreq <span class="ot">&lt;-</span> <span class="fu">cumsum</span>(frequency_results<span class="sc">$</span>RelativeFreq)</span></code></pre></div>
+<p>Done! We can compute everything now… our complete frequency distribution table is:</p>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="understanding-data.html#cb92-1" tabindex="-1"></a>frequency_results</span></code></pre></div>
+<pre><code>##      Groups Frequency RelativeFreq CumulativeFreq CumulativeRelFreq
+## 1 (200,300]         5   0.08620690              5         0.0862069
+## 2 (300,400]         8   0.13793103             13         0.2241379
+## 3 (400,500]        20   0.34482759             33         0.5689655
+## 4 (500,600]        11   0.18965517             44         0.7586207
+## 5 (600,700]         7   0.12068966             51         0.8793103
+## 6 (700,800]         4   0.06896552             55         0.9482759
+## 7 (800,900]         3   0.05172414             58         1.0000000</code></pre>
+<p>For our histogram, we use the <code>hist()</code> function to make one. Let us plot this and again use the <code>xlab=</code>, <code>ylab=</code> and <code>main=</code> arguments to label the graph and axes appropriately.</p>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="understanding-data.html#cb94-1" tabindex="-1"></a><span class="co"># histogram</span></span>
+<span id="cb94-2"><a href="understanding-data.html#cb94-2" tabindex="-1"></a><span class="fu">hist</span>(SchoolData<span class="sc">$</span>TotalStudents, <span class="at">breaks =</span> classes, </span>
+<span id="cb94-3"><a href="understanding-data.html#cb94-3" tabindex="-1"></a>    <span class="at">ylab=</span><span class="st">&quot;Frequency for schools&quot;</span>, </span>
+<span id="cb94-4"><a href="understanding-data.html#cb94-4" tabindex="-1"></a>    <span class="at">xlab=</span><span class="st">&quot;Total students&quot;</span>, </span>
+<span id="cb94-5"><a href="understanding-data.html#cb94-5" tabindex="-1"></a>    <span class="at">main=</span> <span class="st">&quot;Frequency Distribution of Schools in Ealing&quot;</span>)</span></code></pre></div>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
+<p>Lastly, we create the cumulative frequency plots.</p>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="understanding-data.html#cb95-1" tabindex="-1"></a><span class="co"># plot the cumulative frequency</span></span>
+<span id="cb95-2"><a href="understanding-data.html#cb95-2" tabindex="-1"></a><span class="co"># extract the cumulative frequency column</span></span>
+<span id="cb95-3"><a href="understanding-data.html#cb95-3" tabindex="-1"></a>cumulative.freq0 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, frequency_results<span class="sc">$</span>CumulativeFreq)</span>
+<span id="cb95-4"><a href="understanding-data.html#cb95-4" tabindex="-1"></a>cumulative.freq0</span></code></pre></div>
+<pre><code>## [1]  0  5 13 33 44 51 55 58</code></pre>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="understanding-data.html#cb97-1" tabindex="-1"></a><span class="co">#create plot with classes values on x-axis and cumulative frequency values on y-axis</span></span>
+<span id="cb97-2"><a href="understanding-data.html#cb97-2" tabindex="-1"></a><span class="fu">plot</span>(classes, cumulative.freq0, <span class="at">main=</span><span class="st">&quot;Cumulative Frequency Distribution of Schools in Ealing&quot;</span> , <span class="at">xlab=</span><span class="st">&quot;Total Students&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Cumulative Frequency: Schools&quot;</span>)</span>
+<span id="cb97-3"><a href="understanding-data.html#cb97-3" tabindex="-1"></a><span class="co">#connect the dots to each point</span></span>
+<span id="cb97-4"><a href="understanding-data.html#cb97-4" tabindex="-1"></a><span class="fu">lines</span>(classes, cumulative.freq0)</span></code></pre></div>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
+<p>We also create the relative cumulative frequency plots.</p>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="understanding-data.html#cb98-1" tabindex="-1"></a><span class="co"># plot for relative cumulative frequency which is a cumulative percentage</span></span>
+<span id="cb98-2"><a href="understanding-data.html#cb98-2" tabindex="-1"></a><span class="co"># extract the relative cumulative frequency column</span></span>
+<span id="cb98-3"><a href="understanding-data.html#cb98-3" tabindex="-1"></a>rel.cumulative.freq0 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, frequency_results<span class="sc">$</span>CumulativeRelFreq)</span>
+<span id="cb98-4"><a href="understanding-data.html#cb98-4" tabindex="-1"></a>rel.cumulative.freq0</span></code></pre></div>
+<pre><code>## [1] 0.0000000 0.0862069 0.2241379 0.5689655 0.7586207 0.8793103 0.9482759
+## [8] 1.0000000</code></pre>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="understanding-data.html#cb100-1" tabindex="-1"></a><span class="co">#create plot with classes values on x-axis and cumulative frequency values on y-axis</span></span>
+<span id="cb100-2"><a href="understanding-data.html#cb100-2" tabindex="-1"></a><span class="fu">plot</span>(classes, rel.cumulative.freq0, <span class="at">main=</span><span class="st">&quot;Relative Cumulative Frequency Distribution of Schools in Ealing&quot;</span> , <span class="at">xlab=</span><span class="st">&quot;Total Students&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Relative Cumulative Frequency [%]: Schools&quot;</span>)</span>
+<span id="cb100-3"><a href="understanding-data.html#cb100-3" tabindex="-1"></a><span class="co">#connect the dots to each point</span></span>
+<span id="cb100-4"><a href="understanding-data.html#cb100-4" tabindex="-1"></a><span class="fu">lines</span>(classes, rel.cumulative.freq0)</span></code></pre></div>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
+<div class="note">
+<p><strong>Interpretation</strong>: Out of the 58 primary schools in Ealing, 20 schools (0.3448 or 34.48%) have a student number totals ranging between 401-500 as the most frequent observation. The cumulative frequency of the range bracket for student numbers tells you how many schools have students from that range and lower. For instance 33 primary schools in Ealing have up to 500 students (which is 0.5689 or 56.89% of the data’s distribution).</p>
+</div>
+<div class="warning">
+<p><strong>Thoughts to self</strong>: <code>cumsum()</code> function… WTF man!?!</p>
+</div>
+<p><strong>RECAP</strong></p>
+<p>This conclude practical tutorials for week 1. You can save your script by pressing the save button. To recap, in this section you have learnt how to:</p>
+<ol style="list-style-type: decimal">
+<li><p>Access R/RStudio Server and are familiar with RStudio’s environment</p></li>
+<li><p>Creating a data frame, and loading a CSV file into R using <code>read.csv()</code></p></li>
+<li><p>Various basic functions for exploring the structure of a data frame, as well as how to subset data frame and manipulate columns to generate another.</p></li>
+<li><p>We explored various ways for produce basic plots for discrete and categorical variables using <code>barplot()</code> and <code>pie()</code></p></li>
+</ol>
+</div>
+</div>
+<div id="seminar-tasks-and-questions" class="section level2 hasAnchor" number="1.9">
+<h2><span class="header-section-number">1.9</span> Seminar tasks and questions<a href="understanding-data.html#seminar-tasks-and-questions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Please find the seminar task and seminar questions for this week’s seminar below.</p>
+<p><strong>Seminar Task</strong> : Use the seminar data set <code>All Schools in London.csv</code> and import it into RStudio. Perform the following tasks:</p>
+<ol style="list-style-type: decimal">
+<li><p>Create a column called <code>TotalStudents</code> containing the total number of students for each school</p></li>
+<li><p>Create a column called <code>PercentGirls</code> which contains the estimated percentage of girls attending each school.</p></li>
+<li><p>Use the <code>tapply()</code> function to calculate the total number of student by subgroup or <code>type</code> of school</p></li>
+</ol>
+<p><strong>Seminar Questions</strong></p>
+<p>Answer for following questions:</p>
+<ol style="list-style-type: decimal">
+<li><p>What are the names of schools that has the highest, and lowest number of students? [<strong>HINT</strong>: use <code>max()</code>, <code>min()</code> and <code>View()</code> functions]</p></li>
+<li><p>Generate a fully labelled <code>barplot()</code> and describe the distribution of schools by OFSTED scores.</p></li>
+<li><p>Explore the frequency of schools in London based on total number of students. Make a frequency table in R by creating the groups based on total students per school - starting from 0 to 2200, use the interval of 200 students to generate the groups as <code>0-200</code>, <code>201-400</code>, <code>401-600</code>, …, <code>2001-2200</code> and hence number of schools falling into these groupings with these number of students. (Hint: see example in <strong>section 1.8.4.</strong> and lecture Slides #35, and make sure to use an appropriate interval for the ranges).</p></li>
+</ol>
+<ul>
+<li>Create a histogram.</li>
+<li>Create a cumulative frequency plot.</li>
+<li>Create a relative cumulative frequency plot.</li>
+<li>Provide an overall interpretation (see above example and those on slide 45 for Week 1’s lecture).</li>
+</ul>
+<div class="note">
+<p><strong>Important Note</strong>: The solution codes will be released next week on Monday.</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="recommended-reading-list.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="examining-data-i.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": false,
+"download": ["pdf", "epub"],
+"bookdown::pdf_book": null,
+"includes": null,
+"in_header": "preamble.tex",
+"latex_engine": "xelatex",
+"citation_package": "natbib",
+"keep_tex": true,
+"bookdown::epub_book": "default"
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/UCLPG-MSC-SGDS/POLS0008/edit/main/02-week1.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

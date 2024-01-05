@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Bonus Content: Creating tables in RStudio | POLS0008: Introduction to Quantitative Research Methods 2023/24</title>
+  <meta name="description" content="POLS0008: Introduction to Quantitative Methods Handbook" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Bonus Content: Creating tables in RStudio | POLS0008: Introduction to Quantitative Research Methods 2023/24" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="POLS0008: Introduction to Quantitative Methods Handbook" />
+  <meta name="github-repo" content="UCLPG-MSC-SGDS/POLS0008" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Bonus Content: Creating tables in RStudio | POLS0008: Introduction to Quantitative Research Methods 2023/24" />
+  
+  <meta name="twitter:description" content="POLS0008: Introduction to Quantitative Methods Handbook" />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sourcing-data.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="toc-logo">
+<a href="https://www.ucl.ac.uk/module-catalogue/modules/introduction-to-quantitative-research-methods-POLS0008"><img src="images/general/ucl_logo.png">
+</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#description"><i class="fa fa-check"></i>Description</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#structure"><i class="fa fa-check"></i>Structure</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#timetable-and-key-locations"><i class="fa fa-check"></i>Timetable and key locations</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="recommended-reading-list.html"><a href="recommended-reading-list.html"><i class="fa fa-check"></i>Recommended Reading List</a>
+<ul>
+<li class="chapter" data-level="" data-path="recommended-reading-list.html"><a href="recommended-reading-list.html#week-1-understanding-data"><i class="fa fa-check"></i>Week 1: Understanding Data</a></li>
+<li class="chapter" data-level="" data-path="recommended-reading-list.html"><a href="recommended-reading-list.html#week-2-examining-data-i"><i class="fa fa-check"></i>Week 2: Examining Data I</a></li>
+<li class="chapter" data-level="" data-path="recommended-reading-list.html"><a href="recommended-reading-list.html#week-3-examining-data-ii"><i class="fa fa-check"></i>Week 3: Examining Data II</a></li>
+<li class="chapter" data-level="" data-path="recommended-reading-list.html"><a href="recommended-reading-list.html#week-4-sourcing-data"><i class="fa fa-check"></i>Week 4: Sourcing Data</a></li>
+<li class="chapter" data-level="" data-path="recommended-reading-list.html"><a href="recommended-reading-list.html#extra-notes"><i class="fa fa-check"></i>Extra notes</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="understanding-data.html"><a href="understanding-data.html"><i class="fa fa-check"></i><b>1</b> Understanding Data</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="understanding-data.html"><a href="understanding-data.html#introduction"><i class="fa fa-check"></i><b>1.1</b> Introduction</a></li>
+<li class="chapter" data-level="1.2" data-path="understanding-data.html"><a href="understanding-data.html#instructions-for-accessing-rstudio-on-ucl-server"><i class="fa fa-check"></i><b>1.2</b> Instructions for accessing RStudio on UCL Server</a></li>
+<li class="chapter" data-level="1.3" data-path="understanding-data.html"><a href="understanding-data.html#the-environment-in-rstudio"><i class="fa fa-check"></i><b>1.3</b> The environment in RStudio</a></li>
+<li class="chapter" data-level="1.4" data-path="understanding-data.html"><a href="understanding-data.html#using-the-r-console-as-a-calculator"><i class="fa fa-check"></i><b>1.4</b> Using the R-Console as a calculator</a></li>
+<li class="chapter" data-level="1.5" data-path="understanding-data.html"><a href="understanding-data.html#creating-basic-objects-and-assigning-values-to-them"><i class="fa fa-check"></i><b>1.5</b> Creating basic objects and assigning values to them</a></li>
+<li class="chapter" data-level="1.6" data-path="understanding-data.html"><a href="understanding-data.html#data-entry-in-rstudio"><i class="fa fa-check"></i><b>1.6</b> Data entry in RStudio</a></li>
+<li class="chapter" data-level="1.7" data-path="understanding-data.html"><a href="understanding-data.html#uploading-data-to-rstudio-server-and-importing-data-into-the-environment"><i class="fa fa-check"></i><b>1.7</b> Uploading data to RStudio Server and importing data into the environment</a></li>
+<li class="chapter" data-level="1.8" data-path="understanding-data.html"><a href="understanding-data.html#working-with-data-in-rstudio"><i class="fa fa-check"></i><b>1.8</b> Working with data in RStudio</a>
+<ul>
+<li class="chapter" data-level="1.8.1" data-path="understanding-data.html"><a href="understanding-data.html#useful-functions"><i class="fa fa-check"></i><b>1.8.1</b> Useful functions</a></li>
+<li class="chapter" data-level="1.8.2" data-path="understanding-data.html"><a href="understanding-data.html#basic-subsetting-and-manipulation-of-data"><i class="fa fa-check"></i><b>1.8.2</b> Basic subsetting and manipulation of data</a></li>
+<li class="chapter" data-level="1.8.3" data-path="understanding-data.html"><a href="understanding-data.html#basic-visualisation"><i class="fa fa-check"></i><b>1.8.3</b> Basic visualisation</a></li>
+<li class="chapter" data-level="1.8.4" data-path="understanding-data.html"><a href="understanding-data.html#frequency-distributions"><i class="fa fa-check"></i><b>1.8.4</b> Frequency Distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="understanding-data.html"><a href="understanding-data.html#seminar-tasks-and-questions"><i class="fa fa-check"></i><b>1.9</b> Seminar tasks and questions</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="examining-data-i.html"><a href="examining-data-i.html"><i class="fa fa-check"></i><b>2</b> Examining data I</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="examining-data-i.html"><a href="examining-data-i.html#introduction-w02"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="examining-data-i.html"><a href="examining-data-i.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>2.2</b> Measures of central tendency</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="examining-data-i.html"><a href="examining-data-i.html#accessing-rstudio-server-uploading-and-importing-data"><i class="fa fa-check"></i><b>2.2.1</b> Accessing RStudio Server, uploading and importing data</a></li>
+<li class="chapter" data-level="2.2.2" data-path="examining-data-i.html"><a href="examining-data-i.html#mean-median-and-mode"><i class="fa fa-check"></i><b>2.2.2</b> Mean, Median and Mode</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="examining-data-i.html"><a href="examining-data-i.html#simple-plots"><i class="fa fa-check"></i><b>2.3</b> Simple plots</a></li>
+<li class="chapter" data-level="2.4" data-path="examining-data-i.html"><a href="examining-data-i.html#measures-of-dispersion"><i class="fa fa-check"></i><b>2.4</b> Measures of dispersion</a></li>
+<li class="chapter" data-level="2.5" data-path="examining-data-i.html"><a href="examining-data-i.html#seminar-w02"><i class="fa fa-check"></i><b>2.5</b> Seminar task &amp; questions</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="examining-data-ii.html"><a href="examining-data-ii.html"><i class="fa fa-check"></i><b>3</b> Examining data II</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="examining-data-ii.html"><a href="examining-data-ii.html#introduction-w03"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="examining-data-ii.html"><a href="examining-data-ii.html#data-visualisation"><i class="fa fa-check"></i><b>3.2</b> Data visualisation</a></li>
+<li class="chapter" data-level="3.3" data-path="examining-data-ii.html"><a href="examining-data-ii.html#ggplot2"><i class="fa fa-check"></i><b>3.3</b> ggplot2</a></li>
+<li class="chapter" data-level="3.4" data-path="examining-data-ii.html"><a href="examining-data-ii.html#seminar-w03"><i class="fa fa-check"></i><b>3.4</b> Seminar</a></li>
+<li class="chapter" data-level="3.5" data-path="examining-data-ii.html"><a href="examining-data-ii.html#byl-w03"><i class="fa fa-check"></i><b>3.5</b> Before you leave</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="sourcing-data.html"><a href="sourcing-data.html"><i class="fa fa-check"></i><b>4</b> Sourcing data</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="sourcing-data.html"><a href="sourcing-data.html#introduction-w04"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="sourcing-data.html"><a href="sourcing-data.html#sourcing-data-1"><i class="fa fa-check"></i><b>4.2</b> Sourcing data</a></li>
+<li class="chapter" data-level="4.3" data-path="sourcing-data.html"><a href="sourcing-data.html#preparing-data"><i class="fa fa-check"></i><b>4.3</b> Preparing data</a></li>
+<li class="chapter" data-level="4.4" data-path="sourcing-data.html"><a href="sourcing-data.html#seminar-w04"><i class="fa fa-check"></i><b>4.4</b> Seminar</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bonus-content-creating-tables-in-rstudio.html"><a href="bonus-content-creating-tables-in-rstudio.html"><i class="fa fa-check"></i>Bonus Content: Creating tables in RStudio</a>
+<ul>
+<li class="chapter" data-level="" data-path="bonus-content-creating-tables-in-rstudio.html"><a href="bonus-content-creating-tables-in-rstudio.html#overall-summary-table-by-categorical-variables"><i class="fa fa-check"></i>Overall summary table by categorical variables</a></li>
+<li class="chapter" data-level="" data-path="bonus-content-creating-tables-in-rstudio.html"><a href="bonus-content-creating-tables-in-rstudio.html#summary-table-by-categorical-variables-further-stratified"><i class="fa fa-check"></i>Summary table by categorical variables further stratified</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">POLS0008: Introduction to Quantitative Research Methods 2023/24</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="bonus-content-creating-tables-in-rstudio" class="section level1 unnumbered hasAnchor">
+<h1>Bonus Content: Creating tables in RStudio<a href="bonus-content-creating-tables-in-rstudio.html#bonus-content-creating-tables-in-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This is a bonus section and so its entirely optional which can be studied at your own time. We are basically going to show you how to code out a table from RStudio to save you a lot time and energy, as well as potential grief with doing this in <strong>Microsoft Word</strong>.</p>
+<div id="overall-summary-table-by-categorical-variables" class="section level2 unnumbered hasAnchor">
+<h2>Overall summary table by categorical variables<a href="bonus-content-creating-tables-in-rstudio.html#overall-summary-table-by-categorical-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Remember this table in Week 2’s lecture (see slide 42 and 44)?</p>
+<p><img src="images/general/table_slide_42.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>We are going to use the dataset <code>Health Data.csv</code>. Download it by clicking this link <a href="https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Bonus%20Data.zip"><strong>[HERE]</strong></a></p>
+<p>We are producing an overall summary of the lung capacity volume (LCV) which is broken down by the following categorical characteristics: <strong>gender</strong>, <strong>age groups</strong> and <strong>altitude type</strong>.</p>
+<p>You can use the <code>dplyr</code> package to compute the desired summary statistics accordingly by the categories using the <code>group_by()</code> and <code>summarize()</code> functions. We will try this for <code>gender</code> first.</p>
+<div class="sourceCode" id="cb248"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb248-1"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-1" tabindex="-1"></a><span class="co"># loading package for &#39;dplyr&#39;</span></span>
+<span id="cb248-2"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-2" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;dplyr&quot;</span>)</span>
+<span id="cb248-3"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-3" tabindex="-1"></a></span>
+<span id="cb248-4"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-4" tabindex="-1"></a><span class="co"># import the health dataset</span></span>
+<span id="cb248-5"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-5" tabindex="-1"></a>dataset.eg <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Health Data.csv&quot;</span>)</span>
+<span id="cb248-6"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-6" tabindex="-1"></a></span>
+<span id="cb248-7"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-7" tabindex="-1"></a><span class="co"># this code churns out the summary statistics for gender only</span></span>
+<span id="cb248-8"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-8" tabindex="-1"></a><span class="co"># in the summarize() make it report n, mean, sd, median, quantiles and min and max</span></span>
+<span id="cb248-9"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-9" tabindex="-1"></a><span class="co"># store first part of result in object called `gender_table`</span></span>
+<span id="cb248-10"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-10" tabindex="-1"></a>gender_table <span class="ot">&lt;-</span> </span>
+<span id="cb248-11"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-11" tabindex="-1"></a>    dataset.eg <span class="sc">%&gt;%</span> </span>
+<span id="cb248-12"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-12" tabindex="-1"></a>    <span class="fu">group_by</span>(gender) <span class="sc">%&gt;%</span></span>
+<span id="cb248-13"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-13" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">length</span>(initialLCV), <span class="at">mean =</span> <span class="fu">mean</span>(initialLCV), <span class="at">sd =</span> <span class="fu">sd</span>(initialLCV), </span>
+<span id="cb248-14"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-14" tabindex="-1"></a>        <span class="at">median =</span> <span class="fu">median</span>(initialLCV), <span class="at">q1 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.25</span>), <span class="at">q3 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.75</span>),</span>
+<span id="cb248-15"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-15" tabindex="-1"></a>        <span class="at">min =</span> <span class="fu">min</span>(initialLCV), <span class="at">max =</span> <span class="fu">max</span>(initialLCV))</span>
+<span id="cb248-16"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-16" tabindex="-1"></a></span>
+<span id="cb248-17"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-17" tabindex="-1"></a><span class="co"># show result for gender</span></span>
+<span id="cb248-18"><a href="bonus-content-creating-tables-in-rstudio.html#cb248-18" tabindex="-1"></a>gender_table</span></code></pre></div>
+<p>This the result for gender:</p>
+<pre class="text"><code>&gt; gender_table
+# A tibble: 2 × 9
+  gender     n  mean    sd median    q1    q3   min   max
+  &lt;chr&gt;  &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 female   318  5.35  1.94   5.46  3.85  6.98 0.373  9.51
+2 male     336  6.44  3.01   5.82  4.03  8.60 0.388 15.4 </code></pre>
+<p>You can view the result as a data frame by running the code <code>View(gender_table)</code>.</p>
+<p>Now, we can repeat this for the age groups and altitude type variables:</p>
+<div class="sourceCode" id="cb250"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb250-1"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-1" tabindex="-1"></a>ageg_table <span class="ot">&lt;-</span> </span>
+<span id="cb250-2"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-2" tabindex="-1"></a>    dataset.eg <span class="sc">%&gt;%</span> </span>
+<span id="cb250-3"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-3" tabindex="-1"></a>    <span class="fu">group_by</span>(agegroup) <span class="sc">%&gt;%</span></span>
+<span id="cb250-4"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-4" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">length</span>(initialLCV), <span class="at">mean =</span> <span class="fu">mean</span>(initialLCV), <span class="at">sd =</span> <span class="fu">sd</span>(initialLCV), </span>
+<span id="cb250-5"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-5" tabindex="-1"></a>        <span class="at">median =</span> <span class="fu">median</span>(initialLCV), <span class="at">q1 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.25</span>), <span class="at">q3 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.75</span>),</span>
+<span id="cb250-6"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-6" tabindex="-1"></a>        <span class="at">min =</span> <span class="fu">min</span>(initialLCV), <span class="at">max =</span> <span class="fu">max</span>(initialLCV))</span>
+<span id="cb250-7"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-7" tabindex="-1"></a></span>
+<span id="cb250-8"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-8" tabindex="-1"></a>altitude_table <span class="ot">&lt;-</span> </span>
+<span id="cb250-9"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-9" tabindex="-1"></a>    dataset.eg <span class="sc">%&gt;%</span> </span>
+<span id="cb250-10"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-10" tabindex="-1"></a>    <span class="fu">group_by</span>(altitude) <span class="sc">%&gt;%</span></span>
+<span id="cb250-11"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-11" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">length</span>(initialLCV), <span class="at">mean =</span> <span class="fu">mean</span>(initialLCV), <span class="at">sd =</span> <span class="fu">sd</span>(initialLCV), </span>
+<span id="cb250-12"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-12" tabindex="-1"></a>        <span class="at">median =</span> <span class="fu">median</span>(initialLCV), <span class="at">q1 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.25</span>), <span class="at">q3 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.75</span>),</span>
+<span id="cb250-13"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-13" tabindex="-1"></a>        <span class="at">min =</span> <span class="fu">min</span>(initialLCV), <span class="at">max =</span> <span class="fu">max</span>(initialLCV))</span>
+<span id="cb250-14"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-14" tabindex="-1"></a></span>
+<span id="cb250-15"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-15" tabindex="-1"></a><span class="co"># view results</span></span>
+<span id="cb250-16"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-16" tabindex="-1"></a>ageg_table</span>
+<span id="cb250-17"><a href="bonus-content-creating-tables-in-rstudio.html#cb250-17" tabindex="-1"></a>altitude_table</span></code></pre></div>
+<p>See results for the age groups and altitude:</p>
+<pre class="text"><code>&gt; ageg_table
+# A tibble: 3 × 9
+  agegroup        n  mean    sd median    q1    q3   min   max
+  &lt;chr&gt;       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 &lt;55 years     130  3.07  1.04   3.06  2.42  3.63 0.373  5.73
+2 55-59 years   407  5.99  1.98   5.76  4.57  7.15 1.88  13.7 
+3 60+ years     117  8.80  2.39   8.56  7.17 10.7  4.59  15.4 
+
+&gt; altitude_table
+# A tibble: 2 × 9
+  altitude      n  mean    sd median    q1    q3   min   max
+  &lt;chr&gt;     &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 high land    65  7.83  2.25   7.51  6.38  9.25 3.08   12.6
+2 low land    589  5.70  2.55   5.40  3.76  7.14 0.373  15.4</code></pre>
+<p>Before appending the tables together, in each table - i.e., <code>gender_table</code>, <code>ageg_table</code> and <code>altitude_table</code>, we will need to change the name of the first column to something consist across all tables for the appendage to work.</p>
+<div class="sourceCode" id="cb252"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb252-1"><a href="bonus-content-creating-tables-in-rstudio.html#cb252-1" tabindex="-1"></a><span class="co"># change the first column name to something like `varname_cat`</span></span>
+<span id="cb252-2"><a href="bonus-content-creating-tables-in-rstudio.html#cb252-2" tabindex="-1"></a><span class="fu">colnames</span>(ageg_table)[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">&quot;varname_cat&quot;</span></span>
+<span id="cb252-3"><a href="bonus-content-creating-tables-in-rstudio.html#cb252-3" tabindex="-1"></a><span class="fu">colnames</span>(gender_table)[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">&quot;varname_cat&quot;</span></span>
+<span id="cb252-4"><a href="bonus-content-creating-tables-in-rstudio.html#cb252-4" tabindex="-1"></a><span class="fu">colnames</span>(altitude_table)[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">&quot;varname_cat&quot;</span></span></code></pre></div>
+<p>Next step is to append the tables using <code>rbind()</code> in the order of <code>gender_table</code>, <code>ageg_table</code> and <code>altitude_table</code>.</p>
+<div class="sourceCode" id="cb253"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb253-1"><a href="bonus-content-creating-tables-in-rstudio.html#cb253-1" tabindex="-1"></a><span class="co"># stitch tables together using rbind()</span></span>
+<span id="cb253-2"><a href="bonus-content-creating-tables-in-rstudio.html#cb253-2" tabindex="-1"></a>descriptive.table <span class="ot">&lt;-</span> <span class="fu">rbind</span>(gender_table, ageg_table, altitude_table)</span>
+<span id="cb253-3"><a href="bonus-content-creating-tables-in-rstudio.html#cb253-3" tabindex="-1"></a></span>
+<span id="cb253-4"><a href="bonus-content-creating-tables-in-rstudio.html#cb253-4" tabindex="-1"></a><span class="co"># view output</span></span>
+<span id="cb253-5"><a href="bonus-content-creating-tables-in-rstudio.html#cb253-5" tabindex="-1"></a>descriptive.table</span></code></pre></div>
+<p>The result looks something like:</p>
+<pre class="text"><code>&gt; descriptive.table
+# A tibble: 7 × 9
+  varname_cat     n  mean    sd median    q1    q3   min   max
+  &lt;chr&gt;       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 female        318  5.35  1.94   5.46  3.85  6.98 0.373  9.51
+2 male          336  6.44  3.01   5.82  4.03  8.60 0.388 15.4 
+3 &lt;55 years     130  3.07  1.04   3.06  2.42  3.63 0.373  5.73
+4 55-59 years   407  5.99  1.98   5.76  4.57  7.15 1.88  13.7 
+5 60+ years     117  8.80  2.39   8.56  7.17 10.7  4.59  15.4 
+6 high land      65  7.83  2.25   7.51  6.38  9.25 3.08  12.6 
+7 low land      589  5.70  2.55   5.40  3.76  7.14 0.373 15.4 </code></pre>
+<p>Now, fun part - we need to bring the mean and standard deviation estimates into one column. In the same vein, we want the median and Q1 and Q3 results in one column, as well as the ranged values for minimum and maximum both to be in one column.</p>
+<p>We can generate new columns within that <code>descriptive.table</code> object and use the <code>paste()</code> to render the results as a <strong>text string</strong> which can be pasted to the way see fit! You examine at the code carefully</p>
+<div class="sourceCode" id="cb255"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb255-1"><a href="bonus-content-creating-tables-in-rstudio.html#cb255-1" tabindex="-1"></a><span class="co"># create a new column for mean and sd - paste items as 3.56 (±2.23)</span></span>
+<span id="cb255-2"><a href="bonus-content-creating-tables-in-rstudio.html#cb255-2" tabindex="-1"></a>descriptive.table<span class="sc">$</span>mean_sd <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">round</span>(descriptive.table<span class="sc">$</span>mean, <span class="dv">2</span>), <span class="st">&quot; (±&quot;</span>, <span class="fu">round</span>(descriptive.table<span class="sc">$</span>sd, <span class="dv">3</span>), <span class="st">&quot;)&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>) </span>
+<span id="cb255-3"><a href="bonus-content-creating-tables-in-rstudio.html#cb255-3" tabindex="-1"></a><span class="co"># create a new column for median, q1 and q3 - paste items as 3.56 (1.23 to 5.63)</span></span>
+<span id="cb255-4"><a href="bonus-content-creating-tables-in-rstudio.html#cb255-4" tabindex="-1"></a>descriptive.table<span class="sc">$</span>IQR <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">round</span>(descriptive.table<span class="sc">$</span>median, <span class="dv">2</span>), <span class="st">&quot; (&quot;</span>, <span class="fu">round</span>(descriptive.table<span class="sc">$</span>q1, <span class="dv">2</span>), <span class="st">&quot; to &quot;</span>, <span class="fu">round</span>(descriptive.table<span class="sc">$</span>q3, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>)</span>
+<span id="cb255-5"><a href="bonus-content-creating-tables-in-rstudio.html#cb255-5" tabindex="-1"></a><span class="co"># create a new column for min and max - paste items as 3.56 to 14.59</span></span>
+<span id="cb255-6"><a href="bonus-content-creating-tables-in-rstudio.html#cb255-6" tabindex="-1"></a>descriptive.table<span class="sc">$</span>Range <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">round</span>(descriptive.table<span class="sc">$</span>min, <span class="dv">2</span>), <span class="st">&quot; to &quot;</span>, <span class="fu">round</span>(descriptive.table<span class="sc">$</span>max, <span class="dv">2</span>), <span class="at">sep =</span> <span class="st">&quot;&quot;</span>)</span>
+<span id="cb255-7"><a href="bonus-content-creating-tables-in-rstudio.html#cb255-7" tabindex="-1"></a></span>
+<span id="cb255-8"><a href="bonus-content-creating-tables-in-rstudio.html#cb255-8" tabindex="-1"></a><span class="co"># see table</span></span>
+<span id="cb255-9"><a href="bonus-content-creating-tables-in-rstudio.html#cb255-9" tabindex="-1"></a>descriptive.table</span></code></pre></div>
+<p>Look at the later columns:</p>
+<pre class="text"><code>&gt; descriptive.table
+# A tibble: 7 × 12
+  varname_cat     n  mean    sd median    q1    q3   min   max mean_sd       IQR                  Range        
+  &lt;chr&gt;       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;                &lt;chr&gt;        
+1 female        318  5.35  1.94   5.46  3.85  6.98 0.373  9.51 5.35 (±1.937) 5.46 (3.85 to 6.98)  0.37 to 9.51 
+2 male          336  6.44  3.01   5.82  4.03  8.60 0.388 15.4  6.44 (±3.011) 5.82 (4.03 to 8.6)   0.39 to 15.38
+3 &lt;55 years     130  3.07  1.04   3.06  2.42  3.63 0.373  5.73 3.07 (±1.043) 3.06 (2.42 to 3.63)  0.37 to 5.73 
+4 55-59 years   407  5.99  1.98   5.76  4.57  7.15 1.88  13.7  5.99 (±1.979) 5.76 (4.57 to 7.15)  1.88 to 13.67
+5 60+ years     117  8.80  2.39   8.56  7.17 10.7  4.59  15.4  8.8 (±2.387)  8.56 (7.17 to 10.68) 4.59 to 15.38
+6 high land      65  7.83  2.25   7.51  6.38  9.25 3.08  12.6  7.83 (±2.25)  7.51 (6.38 to 9.25)  3.08 to 12.62
+7 low land      589  5.70  2.55   5.40  3.76  7.14 0.373 15.4  5.7 (±2.552)  5.39 (3.76 to 7.14)  0.37 to 15.38</code></pre>
+<p>Now, discard redundant columns and only retain these pasted ones:</p>
+<pre class="text"><code>table_breakdown_by_cat &lt;- descriptive.table[,c(1, 2, 10, 11, 12)]
+
+# see final table
+table_breakdown_by_cat</code></pre>
+<p>We have obtained the desired table:</p>
+<pre class="text"><code>&gt; table_breakdown_by_cat
+# A tibble: 7 × 5
+  varname_cat     n mean_sd       IQR                  Range        
+  &lt;chr&gt;       &lt;int&gt; &lt;chr&gt;         &lt;chr&gt;                &lt;chr&gt;        
+1 female        318 5.35 (±1.937) 5.46 (3.85 to 6.98)  0.37 to 9.51 
+2 male          336 6.44 (±3.011) 5.82 (4.03 to 8.6)   0.39 to 15.38
+3 &lt;55 years     130 3.07 (±1.043) 3.06 (2.42 to 3.63)  0.37 to 5.73 
+4 55-59 years   407 5.99 (±1.979) 5.76 (4.57 to 7.15)  1.88 to 13.67
+5 60+ years     117 8.8 (±2.387)  8.56 (7.17 to 10.68) 4.59 to 15.38
+6 high land      65 7.83 (±2.25)  7.51 (6.38 to 9.25)  3.08 to 12.62
+7 low land      589 5.7 (±2.552)  5.39 (3.76 to 7.14)  0.37 to 15.38</code></pre>
+<p>This is how you make such tables in RStudio. Now, its all about exporting it to a spreadsheet, and copying and pasting it to Microsoft Word document where you can apply the cosmetic changes to make the table publication-worthy. Make sure that the code is indeed churning out the correct information.</p>
+</div>
+<div id="summary-table-by-categorical-variables-further-stratified" class="section level2 unnumbered hasAnchor">
+<h2>Summary table by categorical variables further stratified<a href="bonus-content-creating-tables-in-rstudio.html#summary-table-by-categorical-variables-further-stratified" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Do you also remember this table in Week 2’s lecture (see slide 43)?</p>
+<p><img src="images/general/table_slide_43.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>This is the full code for create that table:</p>
+<div class="sourceCode" id="cb259"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb259-1"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-1" tabindex="-1"></a><span class="co"># overall but broken by a specific categorical variable</span></span>
+<span id="cb259-2"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-2" tabindex="-1"></a><span class="co"># keep female only</span></span>
+<span id="cb259-3"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-3" tabindex="-1"></a>dataset.eg_female <span class="ot">&lt;-</span> dataset.eg[dataset.eg<span class="sc">$</span>gender<span class="sc">==</span><span class="st">&quot;female&quot;</span>,]</span>
+<span id="cb259-4"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-4" tabindex="-1"></a><span class="co"># keep male only</span></span>
+<span id="cb259-5"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-5" tabindex="-1"></a>dataset.eg_male <span class="ot">&lt;-</span> dataset.eg[dataset.eg<span class="sc">$</span>gender<span class="sc">==</span><span class="st">&quot;male&quot;</span>,]   </span>
+<span id="cb259-6"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-6" tabindex="-1"></a></span>
+<span id="cb259-7"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-7" tabindex="-1"></a><span class="co"># create a table for female only</span></span>
+<span id="cb259-8"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-8" tabindex="-1"></a>ageg_table.fe <span class="ot">&lt;-</span> </span>
+<span id="cb259-9"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-9" tabindex="-1"></a>    dataset.eg_female <span class="sc">%&gt;%</span> </span>
+<span id="cb259-10"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-10" tabindex="-1"></a>    <span class="fu">group_by</span>(agegroup) <span class="sc">%&gt;%</span></span>
+<span id="cb259-11"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-11" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">length</span>(initialLCV), <span class="at">mean =</span> <span class="fu">mean</span>(initialLCV), <span class="at">sd =</span> <span class="fu">sd</span>(initialLCV), </span>
+<span id="cb259-12"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-12" tabindex="-1"></a>        <span class="at">median =</span> <span class="fu">median</span>(initialLCV), <span class="at">q1 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.25</span>), <span class="at">q3 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.75</span>),</span>
+<span id="cb259-13"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-13" tabindex="-1"></a>        <span class="at">min =</span> <span class="fu">min</span>(initialLCV), <span class="at">max =</span> <span class="fu">max</span>(initialLCV))</span>
+<span id="cb259-14"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-14" tabindex="-1"></a></span>
+<span id="cb259-15"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-15" tabindex="-1"></a>altitude_table.fe <span class="ot">&lt;-</span> </span>
+<span id="cb259-16"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-16" tabindex="-1"></a>    dataset.eg_female <span class="sc">%&gt;%</span> </span>
+<span id="cb259-17"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-17" tabindex="-1"></a>    <span class="fu">group_by</span>(altitude) <span class="sc">%&gt;%</span></span>
+<span id="cb259-18"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-18" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">length</span>(initialLCV), <span class="at">mean =</span> <span class="fu">mean</span>(initialLCV), <span class="at">sd =</span> <span class="fu">sd</span>(initialLCV), </span>
+<span id="cb259-19"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-19" tabindex="-1"></a>        <span class="at">median =</span> <span class="fu">median</span>(initialLCV), <span class="at">q1 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.25</span>), <span class="at">q3 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.75</span>),</span>
+<span id="cb259-20"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-20" tabindex="-1"></a>        <span class="at">min =</span> <span class="fu">min</span>(initialLCV), <span class="at">max =</span> <span class="fu">max</span>(initialLCV))</span>
+<span id="cb259-21"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-21" tabindex="-1"></a></span>
+<span id="cb259-22"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-22" tabindex="-1"></a><span class="fu">colnames</span>(ageg_table.fe)[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">&quot;varname_cat&quot;</span></span>
+<span id="cb259-23"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-23" tabindex="-1"></a><span class="fu">colnames</span>(altitude_table.fe)[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">&quot;varname_cat&quot;</span></span>
+<span id="cb259-24"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-24" tabindex="-1"></a></span>
+<span id="cb259-25"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-25" tabindex="-1"></a>descriptive.table.fe <span class="ot">&lt;-</span> <span class="fu">rbind</span>(ageg_table.fe, altitude_table.fe)</span>
+<span id="cb259-26"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-26" tabindex="-1"></a></span>
+<span id="cb259-27"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-27" tabindex="-1"></a>descriptive.table.fe<span class="sc">$</span>mean_sd.fe <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">round</span>(descriptive.table.fe<span class="sc">$</span>mean, <span class="dv">2</span>), <span class="st">&quot; (±&quot;</span>, <span class="fu">round</span>(descriptive.table.fe<span class="sc">$</span>sd, <span class="dv">3</span>), <span class="st">&quot;)&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>) </span>
+<span id="cb259-28"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-28" tabindex="-1"></a>descriptive.table.fe<span class="sc">$</span>IQR.fe <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">round</span>(descriptive.table.fe<span class="sc">$</span>median, <span class="dv">2</span>), <span class="st">&quot; (&quot;</span>, <span class="fu">round</span>(descriptive.table.fe<span class="sc">$</span>q1, <span class="dv">2</span>), <span class="st">&quot; to &quot;</span>, <span class="fu">round</span>(descriptive.table.fe<span class="sc">$</span>q3, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>) </span>
+<span id="cb259-29"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-29" tabindex="-1"></a>descriptive.table.fe<span class="sc">$</span>Range.fe <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">round</span>(descriptive.table.fe<span class="sc">$</span>min, <span class="dv">2</span>), <span class="st">&quot; to &quot;</span>, <span class="fu">round</span>(descriptive.table.fe<span class="sc">$</span>max, <span class="dv">2</span>), <span class="at">sep =</span> <span class="st">&quot;&quot;</span>)</span>
+<span id="cb259-30"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-30" tabindex="-1"></a></span>
+<span id="cb259-31"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-31" tabindex="-1"></a>table_breakdown_by_cat.fe <span class="ot">&lt;-</span> descriptive.table.fe[,<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>)]</span>
+<span id="cb259-32"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-32" tabindex="-1"></a></span>
+<span id="cb259-33"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-33" tabindex="-1"></a><span class="co"># create a table for male only</span></span>
+<span id="cb259-34"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-34" tabindex="-1"></a>ageg_table.ma <span class="ot">&lt;-</span> </span>
+<span id="cb259-35"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-35" tabindex="-1"></a>    dataset.eg_male <span class="sc">%&gt;%</span> </span>
+<span id="cb259-36"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-36" tabindex="-1"></a>    <span class="fu">group_by</span>(agegroup) <span class="sc">%&gt;%</span></span>
+<span id="cb259-37"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-37" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">length</span>(initialLCV), <span class="at">mean =</span> <span class="fu">mean</span>(initialLCV), <span class="at">sd =</span> <span class="fu">sd</span>(initialLCV), </span>
+<span id="cb259-38"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-38" tabindex="-1"></a>        <span class="at">median =</span> <span class="fu">median</span>(initialLCV), <span class="at">q1 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.25</span>), <span class="at">q3 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.75</span>),</span>
+<span id="cb259-39"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-39" tabindex="-1"></a>        <span class="at">min =</span> <span class="fu">min</span>(initialLCV), <span class="at">max =</span> <span class="fu">max</span>(initialLCV))</span>
+<span id="cb259-40"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-40" tabindex="-1"></a></span>
+<span id="cb259-41"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-41" tabindex="-1"></a>altitude_table.ma <span class="ot">&lt;-</span> </span>
+<span id="cb259-42"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-42" tabindex="-1"></a>    dataset.eg_male <span class="sc">%&gt;%</span> </span>
+<span id="cb259-43"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-43" tabindex="-1"></a>    <span class="fu">group_by</span>(altitude) <span class="sc">%&gt;%</span></span>
+<span id="cb259-44"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-44" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">length</span>(initialLCV), <span class="at">mean =</span> <span class="fu">mean</span>(initialLCV), <span class="at">sd =</span> <span class="fu">sd</span>(initialLCV), </span>
+<span id="cb259-45"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-45" tabindex="-1"></a>        <span class="at">median =</span> <span class="fu">median</span>(initialLCV), <span class="at">q1 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.25</span>), <span class="at">q3 =</span> <span class="fu">quantile</span>(initialLCV, <span class="fl">0.75</span>),</span>
+<span id="cb259-46"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-46" tabindex="-1"></a>        <span class="at">min =</span> <span class="fu">min</span>(initialLCV), <span class="at">max =</span> <span class="fu">max</span>(initialLCV))</span>
+<span id="cb259-47"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-47" tabindex="-1"></a></span>
+<span id="cb259-48"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-48" tabindex="-1"></a><span class="fu">colnames</span>(ageg_table.ma)[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">&quot;varname_cat&quot;</span></span>
+<span id="cb259-49"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-49" tabindex="-1"></a><span class="fu">colnames</span>(altitude_table.ma)[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">&quot;varname_cat&quot;</span></span>
+<span id="cb259-50"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-50" tabindex="-1"></a></span>
+<span id="cb259-51"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-51" tabindex="-1"></a>descriptive.table.ma <span class="ot">&lt;-</span> <span class="fu">rbind</span>(ageg_table.ma, altitude_table.ma)</span>
+<span id="cb259-52"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-52" tabindex="-1"></a></span>
+<span id="cb259-53"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-53" tabindex="-1"></a>descriptive.table.ma<span class="sc">$</span>mean_sd.ma <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">round</span>(descriptive.table.ma<span class="sc">$</span>mean, <span class="dv">2</span>), <span class="st">&quot; (±&quot;</span>, <span class="fu">round</span>(descriptive.table.ma<span class="sc">$</span>sd, <span class="dv">3</span>), <span class="st">&quot;)&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>) </span>
+<span id="cb259-54"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-54" tabindex="-1"></a>descriptive.table.ma<span class="sc">$</span>IQR.ma <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">round</span>(descriptive.table.ma<span class="sc">$</span>median, <span class="dv">2</span>), <span class="st">&quot; (&quot;</span>, <span class="fu">round</span>(descriptive.table.ma<span class="sc">$</span>q1, <span class="dv">2</span>), <span class="st">&quot; to &quot;</span>, <span class="fu">round</span>(descriptive.table.ma<span class="sc">$</span>q3, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>) </span>
+<span id="cb259-55"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-55" tabindex="-1"></a>descriptive.table.ma<span class="sc">$</span>Range.ma <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">round</span>(descriptive.table.ma<span class="sc">$</span>min, <span class="dv">2</span>), <span class="st">&quot; to &quot;</span>, <span class="fu">round</span>(descriptive.table.ma<span class="sc">$</span>max, <span class="dv">2</span>), <span class="at">sep =</span> <span class="st">&quot;&quot;</span>)</span>
+<span id="cb259-56"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-56" tabindex="-1"></a></span>
+<span id="cb259-57"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-57" tabindex="-1"></a>table_breakdown_by_cat.ma <span class="ot">&lt;-</span> descriptive.table.ma[,<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>)]</span>
+<span id="cb259-58"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-58" tabindex="-1"></a></span>
+<span id="cb259-59"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-59" tabindex="-1"></a><span class="co"># merge the table_breakdown_by_cat.ma and table_breakdown_by_cat.fe to produce the table in slide 43</span></span>
+<span id="cb259-60"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-60" tabindex="-1"></a>table_breakdown_cat_gender <span class="ot">&lt;-</span> <span class="fu">merge</span>(table_breakdown_by_cat.ma, table_breakdown_by_cat.fe, </span>
+<span id="cb259-61"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-61" tabindex="-1"></a>    <span class="at">by.x =</span> <span class="st">&quot;varname_cat&quot;</span>, <span class="at">by.y =</span> <span class="st">&quot;varname_cat&quot;</span>)</span>
+<span id="cb259-62"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-62" tabindex="-1"></a></span>
+<span id="cb259-63"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-63" tabindex="-1"></a><span class="co"># View output table</span></span>
+<span id="cb259-64"><a href="bonus-content-creating-tables-in-rstudio.html#cb259-64" tabindex="-1"></a>table_breakdown_cat_gender</span></code></pre></div>
+<p>Show table:</p>
+<pre class="text"><code>&gt; table_breakdown_cat_gender
+  varname_cat n.x     mean_sd.ma               IQR.ma      Range.ma n.y    mean_sd.fe              IQR.fe     Range.fe
+1   &lt;55 years  65  3.25 (±1.015)   3.15 (2.72 to 3.8)  0.39 to 5.73  65 2.89 (±1.047) 2.83 (2.24 to 3.39) 0.37 to 5.69
+2 55-59 years 209  6.26 (±2.293)  5.94 (4.49 to 7.67) 2.29 to 13.67 198  5.7 (±1.535) 5.69 (4.67 to 6.96) 1.88 to 9.51
+3   60+ years  62 10.37 (±2.028)  10.5 (9.2 to 11.46) 4.83 to 15.38  55 7.02 (±1.238) 7.18 (6.07 to 7.89) 4.59 to 9.45
+4   high land  26  9.23 (±2.668) 9.63 (8.08 to 11.14) 3.08 to 12.62  39  6.9 (±1.269) 7.22 (6.03 to 7.59) 4.59 to 9.51
+5    low land 310   6.2 (±2.922)  5.64 (3.89 to 8.06) 0.39 to 15.38 279 5.14 (±1.918)  5.25 (3.63 to 6.6) 0.37 to 9.45</code></pre>
+<p>There you go - this is one of the many ways of making a table in RStudio. Writing such codes for this task is quite involving but its a good investment in the long-term, and serves as a quick way to churn out estimates into a table - what’s left is for you to apply the required cosmetic changes to the exported table in Excel and Word document.</p>
+<p>If you are not feeling confident with coding out tables - then you should stick to the safest way i.e., creating the tables in Word and simply entering the results accordingly.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sourcing-data.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": true,
+"download": ["pdf", "epub"],
+"bookdown::pdf_book": null,
+"includes": null,
+"in_header": "preamble.tex",
+"latex_engine": "xelatex",
+"citation_package": "natbib",
+"keep_tex": true,
+"bookdown::epub_book": "default"
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/UCLPG-MSC-SGDS/POLS0008/edit/main/06-bonus.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
