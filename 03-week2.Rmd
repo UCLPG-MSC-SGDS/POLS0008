@@ -8,7 +8,7 @@ Any research project involving [quantitative data](https://en.wikipedia.org/wiki
 
 ### Accessing RStudio Server, uploading and importing data
 
-Make sure to download the data set for Week 2 from [**HERE**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Dataset%20for%20Week%202-3.zip) if you have not already done so from the **Welcome Page**. The data sets are:
+Make sure to download the data set for Week 2 from [**HERE**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Dataset%20for%20Week%202.zip) if you have not already done so from the **Welcome Page**. The data sets are:
 
 1. For the tutorial practicals: `London historical population dataset.csv`
 2. For the seminar tasks and questions: `Ambulance and Assault Incidents data.csv`
