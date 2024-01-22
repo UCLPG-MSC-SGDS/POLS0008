@@ -41,7 +41,7 @@ You can download the lecture notes and data sets for the practical lesson from t
 |3 | [**[Lecture Notes]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Lecture_notes/POLS0008-2022-23%20Week%203%20Examining%20Data%20II.pdf)  [**[Dataset]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Dataset%20for%20Week%203.zip) | Examining Data II |
 |4 | [**[Lecture Notes]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Lecture_notes/POLS0008-2022-23%20Week%204%20Sourcing%20Data.pdf) | Sourcing Data |
 
-**SOLUTIONS**: [**[Week 1]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Solutions/Solutions%20for%20Week%201.zip) | **[Week 2]** | **[Week 3]** | **[Week 4]**
+**SOLUTIONS**: [**[Week 1]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Solutions/Solutions%20for%20Week%201.zip) | [**[Week 2]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Solutions/Solutions%20for%20Week%202.zip) | **[Week 3]** | **[Week 4]**
 
 <div class = "note">
 **Important note:** The solutions will be made available each week after the seminars are completed. 
