@@ -4,7 +4,7 @@
 knitr::include_graphics('images/general/recommended_books.png')
 ```
 
-Click this shared [**[LINK]**](https://drive.google.com/drive/folders/15eDVrCi4uGPPenDP_dZWTNo7Y-A9gJ3z?usp=sharing) to get access to these R books if you are having problems securing one or any from the UCL library or elsewhere. 
+Contact me via email (a.musah@ucl.ac.uk) if you are having problems securing one or any of these recommended books from the UCL library or elsewhere.
 
 ## Week 1: Understanding Data {-}
 

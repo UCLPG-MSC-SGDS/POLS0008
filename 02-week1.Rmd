@@ -17,51 +17,50 @@ Make sure to download the data set for Week 1 from [**HERE**](https://github.com
 
 At the end of this tutorial, you will be asked to complete the tasks and questions in **Section 1.9**. Do try to complete this before Thursday's seminar session. The solutions to **Section 1.9** will be released with the week's new lecture notes and other content. 
 
-## Instructions for accessing RStudio on UCL Server 
+## Instructions for accessing RStudio Server
 
-<div class="note">
-**Important Note**: You are strongly advised to use RStudio via UCL Server. This version is currently only available on the UCL network, or through VPN or **Desktop @ UCL Anywhere**. If you are not working on a UCL Workstation, use you own personal device (e.g. desktop, laptop, tablet, smartphone, etc) to connect remotely with **Desktop @ UCL Anywhere** first before proceeding to use RStudio through a UCL server via a web browser.
-</div>
-<br>
-**OPTION A - Connecting to RStudio directly from a UCL PC/Workstation**: To begin, we provide a step-by-step guide to accessing RStudio Server via a UCL workstation. Open a web browser (i.e., Internet Explorer or Google Chrome) and navigate to: [**https://rstudio.data-science.rc.ucl.ac.uk/**](https://rstudio.data-science.rc.ucl.ac.uk/). Log in with your usual UCL **username** and **password**. You should see the RStudio interface appear. 
+To begin, we provide a step-by-step guide to accessing RStudio Server on your personal computer. Please note that you must be connected to UCL's Network.
 
-**Video explanation (Length: 4:03 minutes)**
+**OPTION A - Connecting to RStudio Server from laptop/PC when connected directly to UCL's EDUROAM**: 
+
+- Make sure you are already connected to UCL's EDUROAM wifi if you are on campus. 
+- Open any web browser (i.e., Internet Explorer, Google Chrome, Safari etc.) and navigate to the browser and type the following link: [**https://rstudio.data-science.rc.ucl.ac.uk/**](https://rstudio.data-science.rc.ucl.ac.uk/). 
+- Log in with your usual UCL **username** and **password**. You should see the RStudio interface appear. 
+
+**OPTION B - Connecting from a personal device**: 
+
+Alternatively, if you are working on your laptop/PC off-campus, you can still access RStudio Server. However, you will need to work remotely via **Desktop @ UCL Anywhere** from your personal device and connect through there. 
+
+**Video explanation (Length: 12:04 minutes)**
 ```{r, warnings=FALSE, message=FALSE, echo=FALSE}
 library(vembedr)
-embed_msstream('2924b6c0-8efc-47e0-8fdd-d8070ebd8f4c', height=400) %>% use_align('center')
+embed_youtube('yxfJA_n_7nM', height=400) %>% use_align('center')
 ```
-
-**OPTION B - Connecting from a personal device**: Alternatively, if you are working from you **personal computer**, you can access RStudio via UCL Server. However, you will need to first log into a UCL workstation remotely via **Desktop @ UCL Anywhere** from your personal device. 
-
-**Video explanation (Length: 12:03 minutes)**
-```{r, warnings=FALSE, message=FALSE, echo=FALSE}
-library(vembedr)
-embed_msstream('1f6afc55-dcdd-4707-bfd9-135f168d9fd9', height=400) %>% use_align('center')
-```
+[[**Watch on YouTube**]](https://youtu.be/yxfJA_n_7nM)
 
 Here are the following steps:
 
-Step 1. Initiate UCL Remote **Desktop @ Anywhere**, click on this [**LINK**](https://www.ucl.ac.uk/isd/services/computers/remote-access/desktopucl-anywhere)
+- Initiate UCL Remote **Desktop @ Anywhere**, click on this [**LINK**](https://www.ucl.ac.uk/isd/services/computers/remote-access/desktopucl-anywhere)
 
 ```{r echo=FALSE, out.width = "100%", fig.align='center', cache=TRUE,}
 knitr::include_graphics('images/general/Desktop_Anywhere_bluebutton.png') 
 ```
 
-Step 2. Next, click on the ‘**Log in to Desktop @ UCL Anywhere**’ blue button to log in, and then select “**Use Light Version**”.
+- Next, click on the ‘**Log in to Desktop @ UCL Anywhere**’ blue button to log in, and then select “**Use Light Version**” or "**Web Browser**".
 
 ```{r echo=FALSE, out.width = "100%", fig.align='center', cache=TRUE,}
 knitr::include_graphics('images/general/Please_log_in.png') 
 ```
 
-Step 3. A page will appear asking you to enter your UCL **username** and **password**, enter these pieces of information, and click “**Log On**”.
+- A page will appear asking you to enter your UCL **username** and **password**, enter these pieces of information, and click “**Log On**”.
 
 ```{r echo=FALSE, out.width = "100%", fig.align='center', cache=TRUE,}
 knitr::include_graphics('images/general/Click_on_icon.png') 
 ```
 
-Step 4. Click on the icon “**Desktop @ UCL Anywhere**” to initiate the remote access on to a UCL workstation
+- Click on the icon “**Desktop @ UCL Anywhere**” to initiate the remote access on to a UCL workstation
 
-Step 5. You are now working on a UCL workstation remotely. To open RStudio on server simply open any web browser (i.e., Internet Explorer or Google Chrome) and navigate to: [**https://rstudio.data-science.rc.ucl.ac.uk/**](https://rstudio.data-science.rc.ucl.ac.uk/). Log in with your usual UCL **username** and **password** and you should see the RStudio interface appear.
+- You are now in the network remotely. To open RStudio Server simply open any web browser (i.e., Internet Explorer or Google Chrome) within the remote environment and go to this link: [**https://rstudio.data-science.rc.ucl.ac.uk/**](https://rstudio.data-science.rc.ucl.ac.uk/). Log in with your usual UCL **username** and **password** and you should see the RStudio interface appear.
 
 ## The environment in RStudio
 
@@ -87,11 +86,12 @@ In all practical tutorials, you will be encouraged to use an R Script for collat
 
 The R console window (i.e., Panel 1) is the place where RStudio is waiting for you to tell it what to do. It will show the code you have commanded RStudio to execute, and it will also show the results from that command. You can type the commands directly into the window for execution of as well.
 
-**Video explanation (Length: 13:34 minutes)**
+**Video explanation (Length: 13:35 minutes)**
 ```{r, warnings=FALSE, message=FALSE, echo=FALSE}
 library(vembedr)
-embed_msstream('acb452dd-7d4e-46b6-9bcd-ce437cd1a8b2', height=400) %>% use_align('center')
+embed_youtube('MEnTLV5dyR8', height=400) %>% use_align('center')
 ```
+[[**Watch on YouTube**]](https://youtu.be/MEnTLV5dyR8)
 
 Let us start by using the console window as a basic calculator for typing in addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`) and performing other complex sums. Click inside the R Console window and type `19+8`, and press enter button to get your answer. 
 
@@ -138,11 +138,12 @@ log(3)
 
 Now that we are a bit familiar with using the console as a calculator. Let us build on this and learn one of the most important codes in RStudio which is Assignment Operator.
 
-**Video explanation (Length: 20:28 minutes)**
+**Video explanation (Length: 20:29 minutes)**
 ```{r, warnings=FALSE, message=FALSE, echo=FALSE}
 library(vembedr)
-embed_msstream('a71574d3-8cbd-49f6-92ea-dfe4fcdfeae8', height=400) %>% use_align('center')
+embed_youtube('QkVbWiVYVjA', height=400) %>% use_align('center')
 ```
+[[**Watch on YouTube**]](https://youtu.be/QkVbWiVYVjA)
 
 This arrow symbol `<-` is called the **Assignment Operator**. It is typed by pressing the less than symbol `<` followed by the hyphen symbol `-`. It allows the user to assign values to an object.
 
@@ -284,11 +285,12 @@ dataset
 
 We are going to import the downloaded data for Week 1 into RStudio. It contains information pertained to 58 primary schools in Ealing. We can open spreadsheets, particularly, CSV files in an organised way by uploading the file in the RStudio Server and then opening it using the `read.csv()` function. 
 
-**Video explanation (Length: 12:15 minutes)**
+**Video explanation (Length: 12:16 minutes)**
 ```{r, warnings=FALSE, message=FALSE, echo=FALSE}
 library(vembedr)
-embed_msstream('e7abb9d1-290e-4e50-b470-9710e0bf9384', height=400) %>% use_align('center')
+embed_youtube('lqoQv45TQDI', height=400) %>% use_align('center')
 ```
+[[**Watch on YouTube**]](https://youtu.be/lqoQv45TQDI)
 
 We can do this in four steps:
 
@@ -305,7 +307,7 @@ Step 3. We must set the directory to the folder location in the server to where 
 Step 4. Finally, we can import the data using the `read.csv()` function. The code syntax in the script should read as follows:
 
 ```{r setup, include = FALSE}
-knitr::opts_knit$set(root.dir = "/Volumes/Anwar-HHD/POLS0008/Week 1/Practical Notes")
+knitr::opts_knit$set(root.dir = "/Users/anwarmusah/Documents/Websites/Content/POLS0008 Data/Week 1/Practical Notes")
 knitr::opts_chunk$set(cache = TRUE)
 ```
 ```{r}
@@ -610,13 +612,13 @@ Answer for following questions:
 
 2. Generate a fully labelled `barplot()` and describe the distribution of schools by OFSTED scores.
 
-3. Explore the frequency of schools in London based on total number of students. Make a frequency table in R by creating the groups based on total students per school - starting from 0 to 2200, use the interval of 200 students to generate the groups as `0-200`, `201-400`, `401-600`, ..., `2001-2200` and hence number of schools falling into these groupings with these number of students. (Hint: see example in **section 1.8.4.** and lecture Slides #35, and make sure to use an appropriate interval for the ranges).
+3. Explore the frequency of schools in London based on total number of students. Make a frequency table in R by creating the groups based on total students per school - starting from 0 to 2200, use the interval of 200 students to generate the groups as `0-200`, `201-400`, `401-600`, ..., `2001-2200` and hence number of schools falling into these groupings with these number of students. (Hint: see example in **section 1.8.4.** and make sure to use an appropriate interval for the ranges).
 
 - Create a histogram.
 - Create a cumulative frequency plot.
 - Create a relative cumulative frequency plot.
-- Provide an overall interpretation (see above example and those on slide 45 for Week 1's lecture).
+- Provide an overall interpretation (see above example and those on slide #46 in Week 1's lecture notes).
 
 <div class="note">
-**Important Note**: The solution codes will be released next week on Monday. 
+**Important Note**: The solution codes for this week will be released by the end of Thursday. 
 </div>

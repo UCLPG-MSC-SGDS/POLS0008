@@ -1,5 +1,5 @@
 --- 
-title: "POLS0008: Introduction to Quantitative Research Methods 2023/24"
+title: "POLS0008: Introduction to Quantitative Research Methods 2024/25"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -30,9 +30,9 @@ This module will introduce students to the key tenets of quantitative methods in
 
 For the first four weeks, we will do a deep-dive covering all facets on **Descriptive Statistics** and **R-programming** - this will be taught by **Dr. Anwar Musah**. From Week 5 to 10, it will be focused on **Inferential Statistics** - this will be covered by **Dr. Stephen Jivraj**. Nearing the end of the course, you will be given an assignment i.e., a **3,000 word essay (counting 100% towards your final mark for this course)** based on secondary analysis of survey data. This information will be introduced to you accordingly by both the module tutors to help you to mentally prepare for this moment.
 
-All lecture notes, recommended reading and seminar learning materials as well as supplementary video content developed by **Dr. Anwar Musah** will be hosted on this webpage.
+All lecture notes, recommended reading and seminar learning materials as well as **some** supplementary video content will be hosted on this webpage.
 
-You can download the lecture notes and data sets for the practical lesson from the table below.
+You can download the lecture notes and data sets for the practical and seminar lesson from the table below.
 
 | **Week** | **Downloads** | **Topics** |
 |:----------------|:------------------------|:--------------------------------------|
@@ -41,36 +41,39 @@ You can download the lecture notes and data sets for the practical lesson from t
 |3 | [**[Lecture Notes]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Lecture_notes/POLS0008-2022-23%20Week%203%20Examining%20Data%20II.pdf)  [**[Dataset]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Dataset%20for%20Week%203.zip) | Examining Data II |
 |4 | [**[Lecture Notes]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Lecture_notes/POLS0008-2022-23%20Week%204%20Sourcing%20Data.pdf) | Sourcing Data |
 
-**SOLUTIONS**: [**[Week 1]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Solutions/Solutions%20for%20Week%201.zip) | [**[Week 2]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Solutions/Solutions%20for%20Week%202.zip) | [**[Week 3]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Solutions/Solutions%20for%20Week%203.zip) | [**[Week 4]**](https://github.com/UCLPG-MSC-SGDS/POLS0008/raw/main/Solutions/Solutions%20for%20Week%204.zip)
-
 <div class = "note">
-**Important note:** The solutions will be made available each week after the seminars are completed. 
+**Important note:** The solutions will be made available each week at the end of Thursday via email after the seminars are completed. 
 </div>
 
 ## Timetable and key locations {-}
 
-The **lectures** are held every week in-person on **Tuesday** from **11:00am to 01:00pm** at the **Medical Sciences and Anatomy Anatomy G29 JZ Young LT** [**[MAP]**](https://maps.app.goo.gl/fLK2dyMCtzH6DcjV7)
+The **lectures** are held every week in-person on **Tuesday** from **12:00pm to 02:00pm** at the **Roberts Building G06 Sir Ambrose Fleming LT** [**[MAP]**](https://maps.app.goo.gl/4gFXiBwfUHN5MDUX6)
 
-A series of **8 computer seminars** will take place every week on **Thursday** from **09:00am to 02:00pm** at the **IOE Bedford Way (20) Building in Room 425 PC Lab 2** [**[MAP]**](https://maps.app.goo.gl/TL7dtj9NwnwzPdq99) and at the **Bedford Way (26) Building in Room G11** [**[MAP]**](https://maps.app.goo.gl/QGMTvPnQBptMJuPW9). 
+A series of **9 computer seminars** will take place every week on **Thursday** starting from **10:00am, up to 03:00pm**. All students have been allocated to one of 9 seminar groups (i.e., group 1, 2, 3, 4, 5, 6, 7, 8 or 9). To avoid any confusion, please go to your group’s designated. **You will be working together on the tasks and so please bring your laptops**.
 
-All students have been allocated to one of 8 seminar groups (i.e., group 1, 2, 3, 4, 5, 6, 7, or 8). To avoid any confusion, please go to your group’s designated cluster room. Here are the precise location details for the lecture and seminar cluster rooms:
+The table below highlights precise location for the seminars:
 
-| **Group** | **Location & Times** |
+| **Seminar** | **Location & Times** |
 |:---- |:------------------------------------------------|
-|**1** | Room 425 PC Lab 2, IOE Bedford Way (20), 09:00am-10:00am |
-|**2** | Room 425 PC Lab 2, IOE Bedford Way (20), 10:00am-11:00am |
-|**3** | Room 425 PC Lab 2, IOE Bedford Way (20), 11:00am-12:00pm |
-|**4** | Room G11 PC Cluster, Bedford Way (26), 11:00am-12:00pm |
-|**5** | Room 425 PC Lab 2, IOE Bedford Way (20), 12:00pm-01:00pm |
-|**6** | Room G11 PC Cluster, Bedford Way (26), 12:00pm-01:00pm |
-|**7** | Room 425 PC Lab 2, IOE Bedford Way (20), 01:00pm-02:00pm |
-|**8** | Room G11 PC Cluster, Bedford Way (26), 01:00pm-02:00pm |
+|**1** | [Tavistock Square (35) G01](https://maps.app.goo.gl/yLChPF47qaX6Zf4RA), 10:00am-11:00am |
+|**2** | [Cruciform Building Foyer 1.02 Seminar Room 2](https://maps.app.goo.gl/zqVPaiwBXWewY9hr5), 10:00am-11:00am |
+|**3** | [Cruciform Building Foyer 1.02 Seminar Room 2](https://maps.app.goo.gl/zqVPaiwBXWewY9hr5), 11:00am-12:00pm |
+|**4** | [Tavistock Square (35) G01](https://maps.app.goo.gl/yLChPF47qaX6Zf4RA), 11:00am-12:00pm |
+|**5** | [Tavistock Square (35) G01](https://maps.app.goo.gl/yLChPF47qaX6Zf4RA), 12:00pm-01:00pm |
+|**6** | [IOE Bedford Way (20) Room 790](https://maps.app.goo.gl/imAsqb2z3vLe89Yo9), 12:00pm-01:00pm |
+|**7** | [IOE Bedford Way (20) Room W2.08](https://maps.app.goo.gl/QCazVjs89geFuf1H6), 01:00pm-02:00pm |
+|**8** | [IOE Bedford Way (20) Room 790](https://maps.app.goo.gl/imAsqb2z3vLe89Yo9), 01:00pm-02:00pm |
+|**9** | [IOE Bedford Way (20) Room W2.08](https://maps.app.goo.gl/QCazVjs89geFuf1H6), 02:00pm-03:00pm |
 
-**Seminar Facilitators**: Mikaella Mavrogeni, Marta Fatica & Ricardo Mellado Labbe
+**Postgraduate Seminar Facilitators**: Ricardo Mellado Labbe, Rob Davidson & Tie Franco Brotto
+
+<div class = "note">
+**Important note:** Please bring your own laptops with you to the seminars on Thursday 
+</div>
 
 ## Contact details {-}
 
 Anwar Musah | Lecturer in Social & Geographic Data Sciences </br> 
 UCL Department of Geography </br>
 Room 115, North West Wing Building, WC1E 6BT </br> 
-[**[Bookable ASF]**](https://shorturl.at/uELQT) | Email: a.musah@ucl.ac.uk 
+Office hours: TBC | Email: a.musah@ucl.ac.uk 

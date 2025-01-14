@@ -3,7 +3,7 @@ fig:04-mid-year-download
 fig:04-figure-load-tidyverse
 understanding-data
 introduction
-instructions-for-accessing-rstudio-on-ucl-server
+instructions-for-accessing-rstudio-server
 the-environment-in-rstudio
 using-the-r-console-as-a-calculator
 creating-basic-objects-and-assigning-values-to-them

@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Week 1 Understanding Data | POLS0008: Introduction to Quantitative Research Methods 2023/24</title>
+  <title>Week 1 Understanding Data | POLS0008: Introduction to Quantitative Research Methods 2024/25</title>
   <meta name="description" content="POLS0008: Introduction to Quantitative Methods Handbook" />
-  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Week 1 Understanding Data | POLS0008: Introduction to Quantitative Research Methods 2023/24" />
+  <meta property="og:title" content="Week 1 Understanding Data | POLS0008: Introduction to Quantitative Research Methods 2024/25" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="POLS0008: Introduction to Quantitative Methods Handbook" />
   <meta name="github-repo" content="UCLPG-MSC-SGDS/POLS0008" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Week 1 Understanding Data | POLS0008: Introduction to Quantitative Research Methods 2023/24" />
+  <meta name="twitter:title" content="Week 1 Understanding Data | POLS0008: Introduction to Quantitative Research Methods 2024/25" />
   
   <meta name="twitter:description" content="POLS0008: Introduction to Quantitative Methods Handbook" />
   
@@ -159,7 +159,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1" data-path="understanding-data.html"><a href="understanding-data.html"><i class="fa fa-check"></i><b>1</b> Understanding Data</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="understanding-data.html"><a href="understanding-data.html#introduction"><i class="fa fa-check"></i><b>1.1</b> Introduction</a></li>
-<li class="chapter" data-level="1.2" data-path="understanding-data.html"><a href="understanding-data.html#instructions-for-accessing-rstudio-on-ucl-server"><i class="fa fa-check"></i><b>1.2</b> Instructions for accessing RStudio on UCL Server</a></li>
+<li class="chapter" data-level="1.2" data-path="understanding-data.html"><a href="understanding-data.html#instructions-for-accessing-rstudio-server"><i class="fa fa-check"></i><b>1.2</b> Instructions for accessing RStudio Server</a></li>
 <li class="chapter" data-level="1.3" data-path="understanding-data.html"><a href="understanding-data.html#the-environment-in-rstudio"><i class="fa fa-check"></i><b>1.3</b> The environment in RStudio</a></li>
 <li class="chapter" data-level="1.4" data-path="understanding-data.html"><a href="understanding-data.html#using-the-r-console-as-a-calculator"><i class="fa fa-check"></i><b>1.4</b> Using the R-Console as a calculator</a></li>
 <li class="chapter" data-level="1.5" data-path="understanding-data.html"><a href="understanding-data.html#creating-basic-objects-and-assigning-values-to-them"><i class="fa fa-check"></i><b>1.5</b> Creating basic objects and assigning values to them</a></li>
@@ -210,7 +210,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">POLS0008: Introduction to Quantitative Research Methods 2023/24</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">POLS0008: Introduction to Quantitative Research Methods 2024/25</a>
           </h1>
         </div>
 
@@ -237,35 +237,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p>At the end of this tutorial, you will be asked to complete the tasks and questions in <strong>Section 1.9</strong>. Do try to complete this before Thursday’s seminar session. The solutions to <strong>Section 1.9</strong> will be released with the week’s new lecture notes and other content.</p>
 </div>
-<div id="instructions-for-accessing-rstudio-on-ucl-server" class="section level2 hasAnchor" number="1.2">
-<h2><span class="header-section-number">1.2</span> Instructions for accessing RStudio on UCL Server<a href="understanding-data.html#instructions-for-accessing-rstudio-on-ucl-server" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="note">
-<p><strong>Important Note</strong>: You are strongly advised to use RStudio via UCL Server. This version is currently only available on the UCL network, or through VPN or <strong>Desktop @ UCL Anywhere</strong>. If you are not working on a UCL Workstation, use you own personal device (e.g. desktop, laptop, tablet, smartphone, etc) to connect remotely with <strong>Desktop @ UCL Anywhere</strong> first before proceeding to use RStudio through a UCL server via a web browser.</p>
-</div>
-<p><br>
-<strong>OPTION A - Connecting to RStudio directly from a UCL PC/Workstation</strong>: To begin, we provide a step-by-step guide to accessing RStudio Server via a UCL workstation. Open a web browser (i.e., Internet Explorer or Google Chrome) and navigate to: <a href="https://rstudio.data-science.rc.ucl.ac.uk/"><strong>https://rstudio.data-science.rc.ucl.ac.uk/</strong></a>. Log in with your usual UCL <strong>username</strong> and <strong>password</strong>. You should see the RStudio interface appear.</p>
-<p><strong>Video explanation (Length: 4:03 minutes)</strong></p>
+<div id="instructions-for-accessing-rstudio-server" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Instructions for accessing RStudio Server<a href="understanding-data.html#instructions-for-accessing-rstudio-server" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To begin, we provide a step-by-step guide to accessing RStudio Server on your personal computer. Please note that you must be connected to UCL’s Network.</p>
+<p><strong>OPTION A - Connecting to RStudio Server from laptop/PC when connected directly to UCL’s EDUROAM</strong>:</p>
+<ul>
+<li>Make sure you are already connected to UCL’s EDUROAM wifi if you are on campus.</li>
+<li>Open any web browser (i.e., Internet Explorer, Google Chrome, Safari etc.) and navigate to the browser and type the following link: <a href="https://rstudio.data-science.rc.ucl.ac.uk/"><strong>https://rstudio.data-science.rc.ucl.ac.uk/</strong></a>.</li>
+<li>Log in with your usual UCL <strong>username</strong> and <strong>password</strong>. You should see the RStudio interface appear.</li>
+</ul>
+<p><strong>OPTION B - Connecting from a personal device</strong>:</p>
+<p>Alternatively, if you are working on your laptop/PC off-campus, you can still access RStudio Server. However, you will need to work remotely via <strong>Desktop @ UCL Anywhere</strong> from your personal device and connect through there.</p>
+<p><strong>Video explanation (Length: 12:04 minutes)</strong></p>
 <div class="vembedr" align="center">
 <div>
-<iframe src="https://web.microsoftstream.com/embed/video/2924b6c0-8efc-47e0-8fdd-d8070ebd8f4c?autoplay=false&amp;showinfo=true" width="711" height="400" style="border:none;" data-external="1"></iframe>
+<iframe src="https://www.youtube.com/embed/yxfJA_n_7nM" width="711" height="400" frameborder="0" allowfullscreen="" data-external="1"></iframe>
 </div>
 </div>
-<p><strong>OPTION B - Connecting from a personal device</strong>: Alternatively, if you are working from you <strong>personal computer</strong>, you can access RStudio via UCL Server. However, you will need to first log into a UCL workstation remotely via <strong>Desktop @ UCL Anywhere</strong> from your personal device.</p>
-<p><strong>Video explanation (Length: 12:03 minutes)</strong></p>
-<div class="vembedr" align="center">
-<div>
-<iframe src="https://web.microsoftstream.com/embed/video/1f6afc55-dcdd-4707-bfd9-135f168d9fd9?autoplay=false&amp;showinfo=true" width="711" height="400" style="border:none;" data-external="1"></iframe>
-</div>
-</div>
+<p><a href="https://youtu.be/yxfJA_n_7nM">[<strong>Watch on YouTube</strong>]</a></p>
 <p>Here are the following steps:</p>
-<p>Step 1. Initiate UCL Remote <strong>Desktop @ Anywhere</strong>, click on this <a href="https://www.ucl.ac.uk/isd/services/computers/remote-access/desktopucl-anywhere"><strong>LINK</strong></a></p>
+<ul>
+<li>Initiate UCL Remote <strong>Desktop @ Anywhere</strong>, click on this <a href="https://www.ucl.ac.uk/isd/services/computers/remote-access/desktopucl-anywhere"><strong>LINK</strong></a></li>
+</ul>
 <p><img src="images/general/Desktop_Anywhere_bluebutton.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>Step 2. Next, click on the ‘<strong>Log in to Desktop @ UCL Anywhere</strong>’ blue button to log in, and then select “<strong>Use Light Version</strong>”.</p>
+<ul>
+<li>Next, click on the ‘<strong>Log in to Desktop @ UCL Anywhere</strong>’ blue button to log in, and then select “<strong>Use Light Version</strong>” or “<strong>Web Browser</strong>”.</li>
+</ul>
 <p><img src="images/general/Please_log_in.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>Step 3. A page will appear asking you to enter your UCL <strong>username</strong> and <strong>password</strong>, enter these pieces of information, and click “<strong>Log On</strong>”.</p>
+<ul>
+<li>A page will appear asking you to enter your UCL <strong>username</strong> and <strong>password</strong>, enter these pieces of information, and click “<strong>Log On</strong>”.</li>
+</ul>
 <p><img src="images/general/Click_on_icon.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>Step 4. Click on the icon “<strong>Desktop @ UCL Anywhere</strong>” to initiate the remote access on to a UCL workstation</p>
-<p>Step 5. You are now working on a UCL workstation remotely. To open RStudio on server simply open any web browser (i.e., Internet Explorer or Google Chrome) and navigate to: <a href="https://rstudio.data-science.rc.ucl.ac.uk/"><strong>https://rstudio.data-science.rc.ucl.ac.uk/</strong></a>. Log in with your usual UCL <strong>username</strong> and <strong>password</strong> and you should see the RStudio interface appear.</p>
+<ul>
+<li><p>Click on the icon “<strong>Desktop @ UCL Anywhere</strong>” to initiate the remote access on to a UCL workstation</p></li>
+<li><p>You are now in the network remotely. To open RStudio Server simply open any web browser (i.e., Internet Explorer or Google Chrome) within the remote environment and go to this link: <a href="https://rstudio.data-science.rc.ucl.ac.uk/"><strong>https://rstudio.data-science.rc.ucl.ac.uk/</strong></a>. Log in with your usual UCL <strong>username</strong> and <strong>password</strong> and you should see the RStudio interface appear.</p></li>
+</ul>
 </div>
 <div id="the-environment-in-rstudio" class="section level2 hasAnchor" number="1.3">
 <h2><span class="header-section-number">1.3</span> The environment in RStudio<a href="understanding-data.html#the-environment-in-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -281,12 +287,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="using-the-r-console-as-a-calculator" class="section level2 hasAnchor" number="1.4">
 <h2><span class="header-section-number">1.4</span> Using the R-Console as a calculator<a href="understanding-data.html#using-the-r-console-as-a-calculator" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The R console window (i.e., Panel 1) is the place where RStudio is waiting for you to tell it what to do. It will show the code you have commanded RStudio to execute, and it will also show the results from that command. You can type the commands directly into the window for execution of as well.</p>
-<p><strong>Video explanation (Length: 13:34 minutes)</strong></p>
+<p><strong>Video explanation (Length: 13:35 minutes)</strong></p>
 <div class="vembedr" align="center">
 <div>
-<iframe src="https://web.microsoftstream.com/embed/video/acb452dd-7d4e-46b6-9bcd-ce437cd1a8b2?autoplay=false&amp;showinfo=true" width="711" height="400" style="border:none;" data-external="1"></iframe>
+<iframe src="https://www.youtube.com/embed/MEnTLV5dyR8" width="711" height="400" frameborder="0" allowfullscreen="" data-external="1"></iframe>
 </div>
 </div>
+<p><a href="https://youtu.be/MEnTLV5dyR8">[<strong>Watch on YouTube</strong>]</a></p>
 <p>Let us start by using the console window as a basic calculator for typing in addition (<code>+</code>), subtraction (<code>-</code>), multiplication (<code>*</code>), division (<code>/</code>) and performing other complex sums. Click inside the R Console window and type <code>19+8</code>, and press enter button to get your answer.</p>
 <p>Perform the following sums by typing them inside the R Console window:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="understanding-data.html#cb2-1" tabindex="-1"></a><span class="co"># Addition</span></span>
@@ -327,12 +334,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="creating-basic-objects-and-assigning-values-to-them" class="section level2 hasAnchor" number="1.5">
 <h2><span class="header-section-number">1.5</span> Creating basic objects and assigning values to them<a href="understanding-data.html#creating-basic-objects-and-assigning-values-to-them" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Now that we are a bit familiar with using the console as a calculator. Let us build on this and learn one of the most important codes in RStudio which is Assignment Operator.</p>
-<p><strong>Video explanation (Length: 20:28 minutes)</strong></p>
+<p><strong>Video explanation (Length: 20:29 minutes)</strong></p>
 <div class="vembedr" align="center">
 <div>
-<iframe src="https://web.microsoftstream.com/embed/video/a71574d3-8cbd-49f6-92ea-dfe4fcdfeae8?autoplay=false&amp;showinfo=true" width="711" height="400" style="border:none;" data-external="1"></iframe>
+<iframe src="https://www.youtube.com/embed/QkVbWiVYVjA" width="711" height="400" frameborder="0" allowfullscreen="" data-external="1"></iframe>
 </div>
 </div>
+<p><a href="https://youtu.be/QkVbWiVYVjA">[<strong>Watch on YouTube</strong>]</a></p>
 <p>This arrow symbol <code>&lt;-</code> is called the <strong>Assignment Operator</strong>. It is typed by pressing the less than symbol <code>&lt;</code> followed by the hyphen symbol <code>-</code>. It allows the user to assign values to an object.</p>
 <p>Objects are defined as stored quantities in RStudio’s environment. These objects can be assigned anything from a numeric value to a string character. For instance, suppose we want to create a numeric object called <code>x</code> and assign it with a value of <code>3</code>. We do this by typing <code>x &lt;- 3</code>. Another example, suppose we want to create a string object called <code>y</code> and we assign it with some text <code>"Hello!"</code>. We do this typing <code>y &lt;- "Hello!"</code>.</p>
 <p>Let us create the objects <code>a</code>, <code>b</code>, <code>c</code>, and <code>d</code> and assign them with numeric values. Perform the following by typing them inside the R Console window:</p>
@@ -524,12 +532,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="uploading-data-to-rstudio-server-and-importing-data-into-the-environment" class="section level2 hasAnchor" number="1.7">
 <h2><span class="header-section-number">1.7</span> Uploading data to RStudio Server and importing data into the environment<a href="understanding-data.html#uploading-data-to-rstudio-server-and-importing-data-into-the-environment" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We are going to import the downloaded data for Week 1 into RStudio. It contains information pertained to 58 primary schools in Ealing. We can open spreadsheets, particularly, CSV files in an organised way by uploading the file in the RStudio Server and then opening it using the <code>read.csv()</code> function.</p>
-<p><strong>Video explanation (Length: 12:15 minutes)</strong></p>
+<p><strong>Video explanation (Length: 12:16 minutes)</strong></p>
 <div class="vembedr" align="center">
 <div>
-<iframe src="https://web.microsoftstream.com/embed/video/e7abb9d1-290e-4e50-b470-9710e0bf9384?autoplay=false&amp;showinfo=true" width="711" height="400" style="border:none;" data-external="1"></iframe>
+<iframe src="https://www.youtube.com/embed/lqoQv45TQDI" width="711" height="400" frameborder="0" allowfullscreen="" data-external="1"></iframe>
 </div>
 </div>
+<p><a href="https://youtu.be/lqoQv45TQDI">[<strong>Watch on YouTube</strong>]</a></p>
 <p>We can do this in four steps:</p>
 <p><img src="images/general/Importing_data.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Step 1. Keep the space in your personal directory <code>/nfs/cfs/home2/XXXX/ucl_username</code> tidy by creating new folder and naming it <code>Week 1</code> simply by clicking the <code>New Folder</code> button in the bottom-right panel.</p>
@@ -630,10 +639,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  6 47  4  1</code></pre>
 <div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="understanding-data.html#cb64-1" tabindex="-1"></a><span class="co">#Pass the counts into the barchart()</span></span>
 <span id="cb64-2"><a href="understanding-data.html#cb64-2" tabindex="-1"></a><span class="fu">barplot</span>(counts)</span></code></pre></div>
-<p><img src="POLS0008_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
 <div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="understanding-data.html#cb65-1" tabindex="-1"></a><span class="co">#Fully labelled Bar Plot</span></span>
 <span id="cb65-2"><a href="understanding-data.html#cb65-2" tabindex="-1"></a><span class="fu">barplot</span>(counts, <span class="at">main=</span><span class="st">&quot;School Distribution based on OFSTED performance&quot;</span>, <span class="at">xlab =</span><span class="st">&quot;OFSTED grades&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Number of Schools&quot;</span>)</span></code></pre></div>
-<p><img src="POLS0008_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-26-2.png" width="672" /></p>
 <p>We can represent the above data again as a piechart reporting percentages instead using the <code>pie()</code></p>
 <div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="understanding-data.html#cb66-1" tabindex="-1"></a><span class="co"># tabulate the frequency of schools based on the OfstedGrade using table()</span></span>
 <span id="cb66-2"><a href="understanding-data.html#cb66-2" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">table</span>(SchoolData<span class="sc">$</span>OfstedGrade)</span>
@@ -643,10 +652,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  6 47  4  1</code></pre>
 <div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="understanding-data.html#cb68-1" tabindex="-1"></a><span class="co">#Pass the counts into the pie()</span></span>
 <span id="cb68-2"><a href="understanding-data.html#cb68-2" tabindex="-1"></a><span class="fu">pie</span>(counts)</span></code></pre></div>
-<p><img src="POLS0008_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
 <div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="understanding-data.html#cb69-1" tabindex="-1"></a><span class="co">#Fully labelled Bar Plot</span></span>
 <span id="cb69-2"><a href="understanding-data.html#cb69-2" tabindex="-1"></a><span class="fu">pie</span>(counts, <span class="at">main=</span><span class="st">&quot;Piechart on OFSTED performance&quot;</span>, <span class="at">labels=</span><span class="fu">c</span>(<span class="st">&quot;Outstanding (1)&quot;</span>, <span class="st">&quot;Good (2)&quot;</span>, <span class="st">&quot;Not Good (3)&quot;</span>, <span class="st">&quot;Bad (4)&quot;</span>))</span></code></pre></div>
-<p><img src="POLS0008_files/figure-html/unnamed-chunk-28-2.png" width="672" /></p>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
 <p>We can aggregate the number of students by performance to eyeball whether schools with more student perform either poorly or good on the OFSTED scale.</p>
 <div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="understanding-data.html#cb70-1" tabindex="-1"></a><span class="co"># aggregate the frequency of students from schools based of OfstedGrade in a table using the tapply()</span></span>
 <span id="cb70-2"><a href="understanding-data.html#cb70-2" tabindex="-1"></a></span>
@@ -656,14 +665,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  3210 24225  1692   346</code></pre>
 <div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="understanding-data.html#cb72-1" tabindex="-1"></a><span class="co">#Fully labelled Bar Plot</span></span>
 <span id="cb72-2"><a href="understanding-data.html#cb72-2" tabindex="-1"></a><span class="fu">barplot</span>(totals, <span class="at">main=</span><span class="st">&quot;Student Distribution based on OFSTED performance&quot;</span>, <span class="at">xlab =</span><span class="st">&quot;OFSTED grades&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Number of Primary Students in Ealing&quot;</span>)</span></code></pre></div>
-<p><img src="POLS0008_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
 <p>The <code>OfstedGrade</code> variable has classified schools according to the overall performance from 1 (outstanding) to 4 (poor). We can visual the frequency of schools by performance grade in a bar chart using <code>barchart()</code> function:</p>
 <div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="understanding-data.html#cb73-1" tabindex="-1"></a><span class="co"># tabulate the frequency of schools based on the OfstedGrade using table()</span></span>
 <span id="cb73-2"><a href="understanding-data.html#cb73-2" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">table</span>(SchoolData<span class="sc">$</span>OfstedGrade)</span>
 <span id="cb73-3"><a href="understanding-data.html#cb73-3" tabindex="-1"></a></span>
 <span id="cb73-4"><a href="understanding-data.html#cb73-4" tabindex="-1"></a><span class="co"># Pass the counts to the barplot() function &amp; generate fully labelled Bar Plot</span></span>
 <span id="cb73-5"><a href="understanding-data.html#cb73-5" tabindex="-1"></a><span class="fu">barplot</span>(counts, <span class="at">main=</span><span class="st">&quot;School Distribution based on OFSTED performance&quot;</span>, <span class="at">xlab =</span><span class="st">&quot;OFSTED grades&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Number of Schools&quot;</span>)</span></code></pre></div>
-<p><img src="POLS0008_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
 </div>
 <div id="frequency-distributions" class="section level3 hasAnchor" number="1.8.4">
 <h3><span class="header-section-number">1.8.4</span> Frequency Distributions<a href="understanding-data.html#frequency-distributions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -757,7 +766,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb94-3"><a href="understanding-data.html#cb94-3" tabindex="-1"></a>    <span class="at">ylab=</span><span class="st">&quot;Frequency for schools&quot;</span>, </span>
 <span id="cb94-4"><a href="understanding-data.html#cb94-4" tabindex="-1"></a>    <span class="at">xlab=</span><span class="st">&quot;Total students&quot;</span>, </span>
 <span id="cb94-5"><a href="understanding-data.html#cb94-5" tabindex="-1"></a>    <span class="at">main=</span> <span class="st">&quot;Frequency Distribution of Schools in Ealing&quot;</span>)</span></code></pre></div>
-<p><img src="POLS0008_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
 <p>Lastly, we create the cumulative frequency plots.</p>
 <div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="understanding-data.html#cb95-1" tabindex="-1"></a><span class="co"># plot the cumulative frequency</span></span>
 <span id="cb95-2"><a href="understanding-data.html#cb95-2" tabindex="-1"></a><span class="co"># extract the cumulative frequency column</span></span>
@@ -768,7 +777,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb97-2"><a href="understanding-data.html#cb97-2" tabindex="-1"></a><span class="fu">plot</span>(classes, cumulative.freq0, <span class="at">main=</span><span class="st">&quot;Cumulative Frequency Distribution of Schools in Ealing&quot;</span> , <span class="at">xlab=</span><span class="st">&quot;Total Students&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Cumulative Frequency: Schools&quot;</span>)</span>
 <span id="cb97-3"><a href="understanding-data.html#cb97-3" tabindex="-1"></a><span class="co">#connect the dots to each point</span></span>
 <span id="cb97-4"><a href="understanding-data.html#cb97-4" tabindex="-1"></a><span class="fu">lines</span>(classes, cumulative.freq0)</span></code></pre></div>
-<p><img src="POLS0008_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
 <p>We also create the relative cumulative frequency plots.</p>
 <div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="understanding-data.html#cb98-1" tabindex="-1"></a><span class="co"># plot for relative cumulative frequency which is a cumulative percentage</span></span>
 <span id="cb98-2"><a href="understanding-data.html#cb98-2" tabindex="-1"></a><span class="co"># extract the relative cumulative frequency column</span></span>
@@ -780,7 +789,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb100-2"><a href="understanding-data.html#cb100-2" tabindex="-1"></a><span class="fu">plot</span>(classes, rel.cumulative.freq0, <span class="at">main=</span><span class="st">&quot;Relative Cumulative Frequency Distribution of Schools in Ealing&quot;</span> , <span class="at">xlab=</span><span class="st">&quot;Total Students&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Relative Cumulative Frequency [%]: Schools&quot;</span>)</span>
 <span id="cb100-3"><a href="understanding-data.html#cb100-3" tabindex="-1"></a><span class="co">#connect the dots to each point</span></span>
 <span id="cb100-4"><a href="understanding-data.html#cb100-4" tabindex="-1"></a><span class="fu">lines</span>(classes, rel.cumulative.freq0)</span></code></pre></div>
-<p><img src="POLS0008_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
+<p><img src="POLS0008_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
 <div class="note">
 <p><strong>Interpretation</strong>: Out of the 58 primary schools in Ealing, 20 schools (0.3448 or 34.48%) have a student number totals ranging between 401-500 as the most frequent observation. The cumulative frequency of the range bracket for student numbers tells you how many schools have students from that range and lower. For instance 33 primary schools in Ealing have up to 500 students (which is 0.5689 or 56.89% of the data’s distribution).</p>
 </div>
@@ -811,16 +820,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li><p>What are the names of schools that has the highest, and lowest number of students? [<strong>HINT</strong>: use <code>max()</code>, <code>min()</code> and <code>View()</code> functions]</p></li>
 <li><p>Generate a fully labelled <code>barplot()</code> and describe the distribution of schools by OFSTED scores.</p></li>
-<li><p>Explore the frequency of schools in London based on total number of students. Make a frequency table in R by creating the groups based on total students per school - starting from 0 to 2200, use the interval of 200 students to generate the groups as <code>0-200</code>, <code>201-400</code>, <code>401-600</code>, …, <code>2001-2200</code> and hence number of schools falling into these groupings with these number of students. (Hint: see example in <strong>section 1.8.4.</strong> and lecture Slides #35, and make sure to use an appropriate interval for the ranges).</p></li>
+<li><p>Explore the frequency of schools in London based on total number of students. Make a frequency table in R by creating the groups based on total students per school - starting from 0 to 2200, use the interval of 200 students to generate the groups as <code>0-200</code>, <code>201-400</code>, <code>401-600</code>, …, <code>2001-2200</code> and hence number of schools falling into these groupings with these number of students. (Hint: see example in <strong>section 1.8.4.</strong> and make sure to use an appropriate interval for the ranges).</p></li>
 </ol>
 <ul>
 <li>Create a histogram.</li>
 <li>Create a cumulative frequency plot.</li>
 <li>Create a relative cumulative frequency plot.</li>
-<li>Provide an overall interpretation (see above example and those on slide 45 for Week 1’s lecture).</li>
+<li>Provide an overall interpretation (see above example and those on slide #46 in Week 1’s lecture notes).</li>
 </ul>
 <div class="note">
-<p><strong>Important Note</strong>: The solution codes will be released next week on Monday.</p>
+<p><strong>Important Note</strong>: The solution codes for this week will be released by the end of Thursday.</p>
 </div>
 
 </div>
