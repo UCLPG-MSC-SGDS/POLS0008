@@ -2,6 +2,7 @@ fig:04-ons-website
 fig:04-mid-year-download
 fig:04-figure-load-tidyverse
 understanding-data
+lecture-video-length-020001
 introduction
 instructions-for-accessing-rstudio-server
 the-environment-in-rstudio

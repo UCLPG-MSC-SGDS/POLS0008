@@ -1,5 +1,19 @@
 # Understanding Data
 
+## Lecture video (Length: 02:00:01)
+
+```{r, warnings=FALSE, message=FALSE, echo=FALSE}
+library(vembedr)
+embed_youtube('VhRC697n_iU', height=400) %>% use_align('center')
+```
+[[**Watch on YouTube**]](https://youtu.be/VhRC697n_iU)
+
+<div class="note">
+**Important Note**: This resource contains the recorded lectures, which are provided for your convenience as a supplementary resource if you have already attended the lectures. Please note that watching the lecture recordings alone will not be sufficient to fully grasp the material or adequately prepare for the final assessment. 
+
+POLS0008 is a practical module that requires consistent weekly engagement in both lectures and seminars. Please be aware that seminars are not recorded. Additionally, while every effort has been made to ensure clarity, module tutors cannot guarantee top-quality audio or video footage.
+</div>
+
 ## Introduction
 
 Welcome to week 1's practicals for Introduction to Quantitative Research Methods. This week we will focus on understanding data. The goal for this week’s session is to get you started with using RStudio and getting you to become familiar with its environment. Today's session aims to introduce you to the basic programming etiquette as well as building your confidence in using RStudio. At the end of this session, you should be able to perform the following:
@@ -110,7 +124,7 @@ Perform the following sums by typing them inside the R Console window:
 (5*(170-3.405)/91)+1002
 ```
 
-<div class="warning">
+<div class="note">
 **Important Note**: The text that follows after the hash tag # in the above code chunk is a comment and **NOT** actual code. I have put those comments there to tell you what the code below it (i.e., without hash tag # in front of it) what its doing.
 </div>
 

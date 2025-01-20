@@ -6,12 +6,6 @@
 rm(list = ls())
 gc()
 
-# clear out all plots in R
-# dev.off()
-
-# set your directory
-setwd("/Volumes/Anwar-HHD/POLS0008/Week 1/Practical Notes/Dataset for Week 1")
-
 # load data
 school_data <- read.csv("All Schools in London.csv")
 
